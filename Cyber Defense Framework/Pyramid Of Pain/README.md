@@ -1,4 +1,4 @@
-<p align="center">
+<img width="712" height="337" alt="image" src="https://github.com/user-attachments/assets/2f390c9e-84c8-4bee-a753-f23ea03bde94" /><p align="center">
 <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" width="150" alt="TryHackMe Logo">
 </p>
 
@@ -53,6 +53,36 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 - Answer: `craftingalegacy.com`
 
 ## Task 4
+
+### Go to this report on app.any.run (opens in new tab) and provide the first suspicious domain request you are seeing, you will be using this report to answer the remaining questions of this task.
+
+- If we open the link and click on `DNS Requests`, we can see the first suspicious domain request
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/789ec981-db6d-4f2d-93c4-8fa90045c56a" />
+</p>
+
+- Answer: `craftingalegacy.com`
+
+### What term refers to an address used to access websites?
+
+- Answer: `Domain Name`
+
+### What type of attack uses Unicode characters in the domain name to imitate the a known domain?
+
+- Punycode is a way of converting words that cannot be written in ASCII, into a Unicode ASCII encoding. For example, writing `adıdas.de` instead of `adidas.com`
+
+- Answer: `Punycode attack`
+
+### Provide the redirected website for the shortened URL using a preview: https://tinyurl.com/bw7t8p4u
+
+- We can type `+` at the end of the URL to see the actual website the shortened URL link is redirecting to. However, this did not work for me but you can go into VirusTotal to see the redirected URL
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c7e750b2-c0af-4542-9e52-7be50bdf3093" />
+</p>
+
+- Answer: `https://tryhackme.com/`
+
 ## Task 5
 ## Task 6
 ## Task 7
