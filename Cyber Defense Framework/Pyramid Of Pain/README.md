@@ -84,6 +84,38 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 - Answer: `https://tryhackme.com/`
 
 ## Task 5
+
+### A security vendor has analysed the malicious sample for us. Review the report here to answer the following questions.
+
+- Answer: `No answer needed`
+
+### A process named regidle.exe makes a POST request to an IP address based in the United States (US) on port 8080. What is the IP address?
+
+- I scrolled all the way to page 50 on the report to see the `Network Activity` this executable made and we can see the specific IP address it made it to
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/f7b87a3b-338a-4afb-b683-ddf667a318a5" />
+</p>
+
+- Answer: `96.126.101.6`
+
+### The actor drops a malicious executable (EXE). What is the name of this executable?
+
+- I opened up the report again and we can see what executable the actor dropped under the `Behavior Activities` section on page 4
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0ef320ec-be61-46f2-befa-50c3614df3c7" />
+</p>
+
+- Answer: `G_jugk.exe`
+
+### Look at this report by VirusTotal. How many vendors determine this host to be malicious?
+
+- We can see how many vendors determine this is malicious by opening the report
+<p align="center">
+<img width="1512" height="825" alt="image" src="https://github.com/user-attachments/assets/3dcfcf24-fea2-4f51-a9c8-5b6059bc92bd" />
+</p>
+
+- Answer: `9`
+
 ## Task 6
 ## Task 7
 ## Task 8
