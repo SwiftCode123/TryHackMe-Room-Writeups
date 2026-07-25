@@ -35,6 +35,23 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 - Answer: `Sales_Receipt 5606.xls`
 
 ## Task 3
+
+### Read the following report to answer this question. What is the first IP address the malicious process (PID 1632) attempts to communicate with? 
+- One of the first IP address it attempts to communicate listed below in `Network Activity`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5a4f9ffe-a2e1-411c-804c-01de38b8ea86" />
+</p>
+
+- Answer: `50.87.136.52`
+
+### Read the following report to answer this question. What is the first domain name the malicious process ((PID 1632) attempts to communicate with?
+- The domain name associated with that IP address is listed below
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5349cc4c-c1e8-4d51-9c69-e23acc0b814c" />
+</p>
+
+- Answer: `craftingalegacy.com`
+
 ## Task 4
 ## Task 5
 ## Task 6
