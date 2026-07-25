@@ -105,6 +105,11 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0ef320ec-be61-46f2-befa-50c3614df3c7" />
 </p>
 
+- Also, I confirmed my thoughts when I scrolled to page 39 seeing under `File Activity` and `Dropped files` section
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c20a8e7c-1e90-4eb5-8927-cabd450ed012" />
+</p>
+
 - Answer: `G_jugk.exe`
 
 ### Look at this report by VirusTotal. How many vendors determine this host to be malicious?
