@@ -45,7 +45,7 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 - Answer: `50.87.136.52`
 
 ### Read the following report to answer this question. What is the first domain name the malicious process ((PID 1632) attempts to communicate with?
-- The domain name associated with that IP address is listed below
+- The domain name associated with that IP address is listed below under `DNS Requests`
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5349cc4c-c1e8-4d51-9c69-e23acc0b814c" />
 </p>
