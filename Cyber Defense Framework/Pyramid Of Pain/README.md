@@ -32,6 +32,8 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5aae951f-25bc-44be-ab86-d9ecbcfef0e2" />
 </p>
 
+- Answer: `Sales_Receipt 5606.xls`
+
 ## Task 3
 ## Task 4
 ## Task 5
