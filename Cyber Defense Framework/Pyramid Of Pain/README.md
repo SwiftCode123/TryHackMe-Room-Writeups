@@ -73,7 +73,7 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 
 - Answer: `Punycode attack`
 
-### Provide the redirected website for the shortened URL using a preview: https://tinyurl.com/bw7t8p4u
+### Provide the redirected website for the shortened URL using a preview: `https://tinyurl.com/bw7t8p4u`
 
 - We can type `+` at the end of the URL to see the actual website the shortened URL link is redirecting to. However, this did not work for me but you can go into VirusTotal to see the redirected URL
 
