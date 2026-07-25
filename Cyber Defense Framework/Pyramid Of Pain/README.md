@@ -37,7 +37,7 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 ## Task 3
 
 ### Read the following report to answer this question. What is the first IP address the malicious process (PID 1632) attempts to communicate with? 
-- One of the first IP address it attempts to communicate listed below in `Network Activity`
+- One of the first IP addresses it attempts to communicate to listed below in `Network Activity`
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5a4f9ffe-a2e1-411c-804c-01de38b8ea86" />
 </p>
