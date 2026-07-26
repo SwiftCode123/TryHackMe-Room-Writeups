@@ -122,6 +122,21 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 - Answer: `9`
 
 ## Task 6
+
+### Which network indicator helped us identify the malware type (Emotet)?
+
+- User-strings identify the application or browser making an HTTP request such as `User-Agent: Mozilla/5.0`
+
+- Answer: `User-Agent`
+
+### How many POST requests are in the screenshot from the PCAP file?
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ebb8bc88-52d3-4ce7-8907-6d58680620c4" />
+</p>
+
+- Answer: `6`
+
 ## Task 7
 ## Task 8
 ## Task 9
