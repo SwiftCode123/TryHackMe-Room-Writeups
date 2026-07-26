@@ -185,3 +185,20 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 - We know that the attacker uses `Tools` to accomplish their objective which has to do with the `Tools` tier. The attackers plans and objectives aka tactics and techniques are related to `TTP`. The signatures of a payload/artifacts, for example, such as a file hash, is related to the `Hash values` tier. An attacker can purchase a domain name and typosquat it belongs to the `Domain Names` tier. IP addresses are used to identify infrastructure an attacker uses which belongs to the `IP addresses` tier and lastly detecting C2 traffic belongs in the `Network` tier
 
 - Answer: `THM{PYRAMIDS_COMPLETE}`
+
+## Skills Learned
+
+* Understood the Pyramid of Pain and how different indicators increase the operational cost for attackers when detected
+* Identified and analyzed file hashes, IP addresses, domain names, User-Agent strings, and other indicators of compromise (IOCs)
+* Used VirusTotal to investigate malware samples, review vendor detections, and analyze redirected URLs
+* Navigated `ANY.RUN` sandbox reports to examine DNS requests, network activity, process behavior, and dropped files
+* Identified suspicious domains and understood domain-based attack techniques such as Punycode attacks and URL shortening abuse
+* Analyzed malware network communications by reviewing DNS queries, HTTP POST requests, and C2 infrastructure
+* Learned how User-Agent strings can help attribute malware families such as Emotet
+* Understood fuzzy hashing for identifying similar malware samples despite minor modifications
+* Explored the MITRE ATT&CK framework to research adversary techniques, exfiltration methods, and threat actor tooling such as Cobalt Strike
+* Applied the Pyramid of Pain by classifying indicators into the appropriate tiers based on how difficult they are for an attacker to replace
+
+## Conclusion
+
+This room introduced the Pyramid of Pain as a practical framework for prioritizing indicators based on their impact on adversaries. By analyzing malware reports, network activity, domains, hashes, and attacker techniques, I gained hands-on experience investigating indicators of compromise while reinforcing the value of focusing on higher-level detections such as tools and TTPs rather than easily replaceable artifacts like hashes or IP addresses
