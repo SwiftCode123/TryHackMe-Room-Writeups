@@ -151,5 +151,7 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a19db53f-c1f6-465d-ae6f-1813d3253712" />
 </p>
 
+- Answer: `context triggered piecewise hashes`
+
 ## Task 8
 ## Task 9
