@@ -176,3 +176,10 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 - Answer: `Cobalt Strike`
 
 ## Task 9
+
+- For this task, it was more practical and I used what I learned to match the prompts to the correct tiers in the pyramid
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/062fcd34-b2a0-49d5-8212-621392ccdcbc" />
+</p>
+
+- We know that the attacker uses `Tools` to accomplish their objective which has to do with the `Tools` tier. The attackers plans and objectives aka tactics and techniques are related to `TTP`. The signatures of a payload/artifacts, for example, such as a file hash, is related to the `Hash values` tier. An attacker can purchase a domain name and typosquat it belongs to the `Domain Names` tier. IP addresses are used to identify infrastructure an attacker uses which belongs to the `IP addresses` tier and lastly detecting C2 traffic belongs in the `Network` tier
