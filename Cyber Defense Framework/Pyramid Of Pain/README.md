@@ -138,5 +138,18 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 - Answer: `6`
 
 ## Task 7
+
+### Provide the method used to determine similarity between the files 
+- Fuzzy hashing helps perform similarity analysis matching two files with minor differences based on the fuzzy hash value (such as SSDeep)
+
+- Answer: `Fuzzy hashing`
+
+### Provide the alternative name for fuzzy hashes without the abbreviation 
+
+- THM gave me a website to go and based on the information, we know what the alternative name is
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a19db53f-c1f6-465d-ae6f-1813d3253712" />
+</p>
+
 ## Task 8
 ## Task 9
