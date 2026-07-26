@@ -154,4 +154,25 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 - Answer: `context triggered piecewise hashes`
 
 ## Task 8
+
+### Navigate to ATT&CK Matrix webpage. How many techniques fall under the Exfiltration category?
+- THM gave me a website to go to and we can see in the `Exfiltration` category, how many techniques there are
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e88c32cd-b610-4d34-980a-da26f05376ad" />
+</p>
+
+### Chimera is a China-based hacking group that has been active since 2018. What is the name of the commercial, remote access tool they use for C2 beacons and data exfiltration?
+
+- First, I went to the website and clicked on `Exfiltration Over C2 Channel`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c86bcd4f-6872-4b46-aaf5-89640707fe0f" />
+</p>
+
+- Then, we can scroll down or use `Ctrl + F` to find what tool they used. I searched up `beacon` via `Ctrl + F` to get there
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d7fc9198-c318-48f6-8569-bae241478c22" />
+</p>
+
+- Answer: `Cobalt Strike`
+
 ## Task 9
