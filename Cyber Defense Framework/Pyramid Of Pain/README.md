@@ -125,7 +125,7 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 
 ### Which network indicator helped us identify the malware type (Emotet)?
 
-- User-strings identify the application or browser making an HTTP request such as `User-Agent: Mozilla/5.0`
+- User-Agent strings identify the application or browser making an HTTP request such as `User-Agent: Mozilla/5.0`
 
 - Answer: `User-Agent`
 
