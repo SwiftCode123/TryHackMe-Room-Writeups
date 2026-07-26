@@ -183,3 +183,5 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 </p>
 
 - We know that the attacker uses `Tools` to accomplish their objective which has to do with the `Tools` tier. The attackers plans and objectives aka tactics and techniques are related to `TTP`. The signatures of a payload/artifacts, for example, such as a file hash, is related to the `Hash values` tier. An attacker can purchase a domain name and typosquat it belongs to the `Domain Names` tier. IP addresses are used to identify infrastructure an attacker uses which belongs to the `IP addresses` tier and lastly detecting C2 traffic belongs in the `Network` tier
+
+- Answer: `THM{PYRAMIDS_COMPLETE}`
