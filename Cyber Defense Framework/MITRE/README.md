@@ -136,5 +136,24 @@ Explore the various resources that MITRE has made available to the cyber securit
 - Answer: `DET0546`
 
 ## Task 5
+
+### Which ATT&CK Tactic is associated with CAR-2019-07-001 (opens in new tab)?
+
+- TryHackMe gave the link to this page for this analytic and below listed is the ATT&CK tactic
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/aced4293-d41b-49bb-87ce-a1a6927be9a9" />
+</p>
+
+- Answer: `Defense Evasion`
+
+### What is the Analytic Type for Access Permission Modification?
+
+- The `Analytic Type` is listed in the box
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/b5d22377-f74e-443d-b646-a7e0fbfa7163" />
+</p>
+
+- Answer: `Situational Awareness`
+
 ## Task 6
 ## Task 7
