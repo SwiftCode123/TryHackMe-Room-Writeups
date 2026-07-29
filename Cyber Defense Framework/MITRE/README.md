@@ -156,4 +156,28 @@ Explore the various resources that MITRE has made available to the cyber securit
 - Answer: `Situational Awareness`
 
 ## Task 6
+
+### Which sub-technique of User Behavior Analysis (opens in new tab) would you use to analyze the geolocation data of user logon attempts?
+
+- TryHackMe gave me a link to this page and we can see the defensive technique for analyzing the geolocation of user logon attempts
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c79a7fa7-b673-49e2-8f5b-6a2e3b5b820b" />
+</p>
+
+- Answer: `User Geolocation Logon Pattern Analysis`
+
+### Which digital artifact does this sub-technique rely on analyzing?
+
+- I clicked on the ID next to `User Geolocation Logon Pattern Analysis`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/61616a22-b98b-4558-9abb-678697998c72" />
+</p>
+
+- We can see what artifact it points to
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/90428705-0d4c-43c6-a986-769b90075eb4" />
+</p>
+
+- Answer: `Network Traffic`
+
 ## Task 7
