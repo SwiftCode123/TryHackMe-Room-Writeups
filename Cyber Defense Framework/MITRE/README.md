@@ -181,3 +181,21 @@ Explore the various resources that MITRE has made available to the cyber securit
 - Answer: `Network Traffic`
 
 ## Task 7
+
+### What technique ID is associated with Scrape Blockchain Data (opens in new tab) in the AADAPT framework?
+
+- TryHackMe gave me the link for this page and we can see the ID listed below
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5302d9ec-7e0a-4072-931e-eb370f3b6038" />
+</p>
+
+- Answer: `ADT3025`
+
+### 
+
+- TryHackMe gave me the link to this page and we can see the tactic below
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e3a6ec05-9367-4258-9de2-1ec8b94d1eee" />
+</p>
+
+- Answer: `Defense Evasion`
