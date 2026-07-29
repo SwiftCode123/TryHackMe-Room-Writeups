@@ -2,8 +2,9 @@
 
 TryHackMe: https://tryhackme.com/
 
-This repository contains all my public write-ups for TryHackMe. I aim to keep all write-ups well formatted, structured, and easy to follow
+This repository contains all my public TryHackMe write-ups, including walkthroughs and CTF challenge solutions. I aim to keep each write-up well-formatted, structured, and easy to follow
 
+> **Note:** Rooms marked with the 🚩 icon are CTF-style challenges rather than standard walkthroughs
 ---
 
 ## Content
@@ -34,7 +35,8 @@ This repository contains all my public write-ups for TryHackMe. I aim to keep al
     - [Splunk: The Basics](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Core%20SOC%20Solutions/Splunk:%20The%20Basics/README.md)
     - [Elastic Stack: The Basics](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Core%20SOC%20Solutions/Elastic%20Stack%3A%20The%20Basics/README.md)
   - [Cyber Defense Framework](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/tree/main/Cyber%20Defense%20Framework)
-    - [Pyramid Of Pain](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Cyber%20Defense%20Framework/Pyramid%20Of%20Pain/README.md) 
+    - [Pyramid Of Pain](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Cyber%20Defense%20Framework/Pyramid%20Of%20Pain/README.md)
+    - [Summit (CTF Challenge 🚩)]()
  
 ## TryHackMe Profile
 
