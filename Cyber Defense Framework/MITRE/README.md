@@ -191,7 +191,7 @@ Explore the various resources that MITRE has made available to the cyber securit
 
 - Answer: `ADT3025`
 
-### 
+### Which tactic does LLM Prompt Obfuscation (opens in new tab) belong to in the ATLAS framework?
 
 - TryHackMe gave me the link to this page and we can see the tactic below
 <p align="center">
