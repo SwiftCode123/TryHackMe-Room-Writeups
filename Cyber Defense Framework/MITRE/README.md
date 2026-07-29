@@ -200,8 +200,6 @@ Explore the various resources that MITRE has made available to the cyber securit
 
 - Answer: `Defense Evasion`
 
-Here are sections that match the style of your write-up
-
 ## Skills Learned
 
 * Navigated the MITRE ATT&CK Matrix to identify tactics, techniques, sub-techniques, and associated technique IDs
