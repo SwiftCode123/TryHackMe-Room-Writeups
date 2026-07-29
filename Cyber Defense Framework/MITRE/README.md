@@ -49,6 +49,45 @@ Explore the various resources that MITRE has made available to the cyber securit
 - Answer: `T1136`
 
 ## Task 3
+
+### In which country is Mustang Panda based?
+
+- TryHackMe gave me the link to go to `Mustang Panda`'s matrix page and we can see where they are based in
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/272ba040-a456-40fa-9aec-a65cb7fe76c5" />
+</p>
+
+- Answer: `China`
+
+### Which ATT&CK technique ID maps to Mustang Panda’s Reconnaissance tactics?
+
+- `Mustang Panda` specifically uses Spearphishing as noted below whether it is `Spearphishing Link` or `Spearphishing Attachment`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/65be71cc-00db-40d1-81e5-e4317672aed9" />
+</p>
+
+- On the main MITRE ATT&CK page, I clicked on the `Spearphishing Attachment` link
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/75e4f667-9e9b-4604-b6ec-9ee366b128e9" />
+</p>
+
+- I then saw what ATT&CK technique ID it has
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1a12a829-f815-4bda-a112-b3bcf1ecaa3b" />
+</p>
+
+- Answer: `T1598`
+
+### Which software is Mustang Panda known to use for Access Token Manipulation?
+
+- I did `Ctrl + F` for `Access Token Manipulation` and on the left side, it lists the software they use
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/28fb2ae4-e28f-405a-8ab0-fdc03c9dd453" />
+</p>
+
+- Answer: `Cobalt Strike`
+
 ## Task 4
 ## Task 5
 ## Task 6
