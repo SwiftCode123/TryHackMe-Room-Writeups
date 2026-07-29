@@ -84,6 +84,57 @@ Explore the various resources that MITRE has made available to the cyber securit
 - Answer: `Cobalt Strike`
 
 ## Task 4
+
+### Which APT group has targeted the aviation sector and has been active since at least 2013?
+
+- I used `Ctrl + F` to find `aviation` and the first one showed up which was also active since 2013
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/f612b043-e04c-4d43-9d1e-becb8ba43cc9" />
+</p>
+
+- Answer: `APT33`
+
+### Which ATT&CK sub-technique used by this group is a key area of concern for companies using Office 365?
+
+- I clicked on `APT33` from the last question and went to their page specifically. I again used `Ctrl + F` to find `office` and we can see the name of the sub-technique that targets companies using Office 365
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0a260327-9e5a-48d5-b83b-b9b670d757bd" />
+</p>
+
+- Answer: `Cloud Accounts`
+
+### According to ATT&CK, what tool is linked to the APT group and the sub-technique you identified?
+
+- Here, the description lists the software they use
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/604eb1c1-8a70-456e-8ba0-8cafafd2f432" />
+</p>
+
+- Answer: `Ruler`
+
+### Which mitigation strategy advises removing inactive or unused accounts to reduce exposure to this sub-technique?
+
+- I clicked on the sub-technique listed
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/7c66ea38-9fcd-450f-9877-46812aa39a39" />
+</p>
+
+- Under the `Mitigations` section, we can see the mitigation name for removing inactive or unused accounts for this particular sub-technique
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8343429d-1acf-4ad5-b474-a82ec3e285c5" />
+</p>
+
+- Answer: `User Account Management`
+
+### What Detection Strategy ID would you implement to detect abused or compromised cloud accounts?
+
+- Under the `Detection Strategy` section, we can see the ID listed
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1fc59253-570a-4a78-ae3f-cb6cbb236a04" />
+</p>
+
+- Answer: `DET0546`
+
 ## Task 5
 ## Task 6
 ## Task 7
