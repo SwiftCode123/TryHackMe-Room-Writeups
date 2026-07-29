@@ -199,3 +199,23 @@ Explore the various resources that MITRE has made available to the cyber securit
 </p>
 
 - Answer: `Defense Evasion`
+
+Here are sections that match the style of your write-up
+
+## Skills Learned
+
+* Navigated the MITRE ATT&CK Matrix to identify tactics, techniques, sub-techniques, and associated technique IDs
+* Mapped common attack techniques such as phishing and account creation to their corresponding ATT&CK tactics and identifiers
+* Explored threat actor profiles to analyze attribution, targeted industries, and documented adversary behaviors
+* Used ATT&CK Navigator to examine threat group techniques and correlate them with specific ATT&CK IDs
+* Identified adversary software associated with attack techniques, including offensive tools used for access token manipulation
+* Investigated APT groups to understand targeting patterns, cloud-focused attack techniques, and linked malware or tooling
+* Located mitigation strategies and detection guidance within ATT&CK to strengthen defensive security practices
+* Explored MITRE CAR analytics to identify detection use cases, analytic types, and ATT&CK tactic mappings
+* Analyzed MITRE D3FEND defensive techniques and the digital artifacts leveraged for threat detection
+* Explored additional MITRE frameworks including AADAPT and ATLAS to understand cryptocurrency and AI-related adversary techniques
+* Improved proficiency in navigating MITRE resources to support threat intelligence, detection engineering, and security analysis
+
+## Conclusion
+
+This room provided a comprehensive introduction to the MITRE ecosystem and demonstrated how its frameworks can be used to understand, detect, and defend against real-world cyber threats. By exploring ATT&CK, CAR, D3FEND, AADAPT, and ATLAS, I gained practical experience navigating MITRE resources, researching threat actors, identifying attack techniques, and understanding the relationship between offensive behaviors and defensive strategies. These skills provide a strong foundation for threat hunting, detection engineering, incident response, and overall cybersecurity analysis
