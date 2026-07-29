@@ -67,14 +67,9 @@ Explore the various resources that MITRE has made available to the cyber securit
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/65be71cc-00db-40d1-81e5-e4317672aed9" />
 </p>
 
-- On the main MITRE ATT&CK page, I clicked on the `Spearphishing Attachment` link
+- I was given a link by TryHackMe to use the ATT&CK Navigator for `Mustang Panda` and I hovered over `Spearphishing Link` and saw what the associated ATT&CK technique ID was
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/75e4f667-9e9b-4604-b6ec-9ee366b128e9" />
-</p>
-
-- I then saw what ATT&CK technique ID it has
-<p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1a12a829-f815-4bda-a112-b3bcf1ecaa3b" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/af7f753e-5cb4-45e8-9247-3612cb552475" />
 </p>
 
 - Answer: `T1598`
