@@ -48,7 +48,7 @@ Please visit this link(opens in new tab) to check out the MITRE ATT&CK Navigator
 
 ### Sunny identified that the APT might have moved forward from the recon phase. Which accounts might the APT compromise while developing resources?
 
-- After the group uses the `Spearphishing Link` technique, victims who click the link may have their credentials stolen, which could lead to their email account being compromised
+- After the group uses the `Spearphishing Link` technique, victims who click the link may have their credentials stolen, which could lead to their email account being compromised which then can be used for other purposes such as sending phishing emails
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c61d8fab-0a16-494e-aa3c-c69251d9cdd3" />
