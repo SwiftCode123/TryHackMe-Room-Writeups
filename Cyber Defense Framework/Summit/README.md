@@ -200,20 +200,20 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 
 ## 🚩 Flags
 
-## Task 1
+### Task 1
 **Flag:** `THM{********************************}`
 
-## Task 2
+### Task 2
 **Flag:** `THM{********************************}`
 
-## Task 3
+### Task 3
 **Flag:** `THM{********************************}`
 
-## Task 4
+### Task 4
 **Flag:** `THM{********************************}`
 
-## Task 5
+### Task 5
 **Flag:** `THM{********************************}`
 
-## Task 6
+### Task 6
 **Flag:** `THM{********************************}`
