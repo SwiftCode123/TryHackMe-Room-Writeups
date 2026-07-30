@@ -123,7 +123,7 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/37fea417-571f-44e4-b1d4-e9c581b1d5b0" />
 </p>
 
-- We were successful able to detect this attack making it even harder for the attacker
+- We were successfully able to detect this attack making it even harder for the attacker and retrieve the flag
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/961e7df4-796f-4b8a-a121-dbf181b8f4cf" />
 </p>
