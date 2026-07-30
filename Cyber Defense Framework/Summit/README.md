@@ -33,7 +33,7 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 
 - As you can see I selected `sample1.exe` and clicked the button `Submit for Analysis`. Now, remembering from the `Pyramid Of Pain` room and general knowledge, we can block files from executing via their hashes. The hashes are at the lowest tier in the pyramid and so an attacker can just change something in the file to create a completely different hash and so its not really frustrating for an attacker to evade this defense. We can not just rely on hashes
 
-- I copied the hash and pasted it in the `Hash Blocklist` and successfully prevented the hash from running
+- I copied the hash and pasted it in the `Hash Blocklist` and successfully prevented the file from running
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/75a55922-8f33-4472-8c0e-661f97b89348" />
@@ -64,3 +64,28 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 </p>
 
 - However, remembering from the `Pyramid of Pain`, an attacker can just get a new public IP address as stated in the email above. It is not hard for the attacker to evade this defense but it was a bit harder for the attacker considering `IP addresses` are above `Hash Values` in the pyramid
+
+- I went back to Malware Sandbox and uploaded the `sample3.exe` and it generated the report. I scrolled all the way down and we can see some domain names. I noticed that `backdoor.exe` is making a outbound connection to `emudyn.bresonicz.info` over port `80`. Furthermore, `sample3.exe` is also communicating with the malicious domain over port `80` and `1337`.
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/51be2f89-f7d3-4bc8-a35b-a3da04d1a759" />
+</p>
+
+- There are also two HTTP requests made by `sample3.exe` to domain. `Xplorita Cloud Services`, seems be hosting the malicious infrastructure for this attack. So, what I am assuming happened is that `sample3.exe` acted as a dropper, ran first and then connected to `http://emudyn.bresonicz.info/backdoor.exe` to download `backdoor.exe` over port 80
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d34692a6-e26a-41a2-afa3-1144d60b43fe" />
+</p>
+
+- Now that I know that this domain is malicious, we can just simply block the domain. This will be higher than `IP addresses` on the `Pyramid Of Pain` making it a bit harder for the attacker to evade this defense as they will have to choose, purchase, and register the domain again. Notice that `emudyn.bresonicz.info` resolves to `62.123.140.9` so we can just block this from happening via DNS filtering
+
+- I used DNS filtering and simply blocked the domain name being resolved to that IP address and it was successful
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/aba86f47-1b62-4ea1-b0af-00ddfd81e043" />
+</p>
+
+- Here, I got the flag
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/21904155-6b9e-4f7e-a3d7-a8ec1415545d" />
+</p>
