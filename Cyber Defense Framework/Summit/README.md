@@ -137,13 +137,13 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 - In the image above, I noticed that `sample5.exe` connects to `51.102.10.19:443` to download `beacon.bat` and then `beacon.bat` keeps making POST requests to `51.102.10.19:443`. Now, in the email the attacker gave me a `outgoing_connections.log` file to take a look at and so I did
 
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5cd61aa3-5bd1-480f-8b2b-077de345d2aa" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/b435f8e5-9c27-4001-ad9b-74bd0d7cca4e" />
 </p>
 
 - I noticed the repeated connections from `10.10.15.12` to `51.102.10.19:443` that I had identified in the report and noted down the size as well (`97 bytes`). Also something to note is the frequency of the requests. We can see that each request made from these two IP addresses is in 30 minute intervals
 
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/2a0d25e0-df2b-4c5e-8025-2a0ed027bf95" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ce37c01b-2b35-42ea-89a2-ed1b180814dd" />
 </p>
 
 - I clicked on `Sysmon Log Events` because I wanted to detect any network connections made
