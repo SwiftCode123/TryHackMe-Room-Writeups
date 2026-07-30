@@ -71,4 +71,47 @@ Please visit this link(opens in new tab) to check out the MITRE ATT&CK Navigator
 
 ### If the above technique was successful, which scripting interpreters should Sunny search for to identify successful execution? (Answer format: <technique 1> and <technique 2>)
 
-- 
+- The scripting interpreters can be found here under the same tactic. `Powershell` and `Windows Command Shell` are common tools to execute these scripts
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/977f69d6-34b2-445a-9e01-86319330f7af" />
+</p>
+
+- Answer: `Powershell and Windows Command shell`
+
+### While looking at the scripting interpreters identified in Q4, Sunny found some obfuscated scripts that changed the registry. Assuming these changes are for maintaining persistence, which registry keys should Sunny observe to track these changes?
+
+- Under the `Persistence` tactic, we can see the answer. `Registry Run Keys` allows the malware to gain persistence because it can place itself in that directory and always runs whenever the computer restarts or boots up
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/66534fc7-94fd-447a-ab98-9685e3baf967" />
+</p>
+
+- Answer: `Registry run keys`
+
+### Sunny identified that the APT executes system binaries to evade defences. Which system binary's execution should Sunny scrutinize for proxy execution?
+
+- It is a system binary located under the `Defense Evasion` tactic. While `rundll32.exe` is normally used by Windows to load DLL files, an attacker can hijack the real, trusted binary to load and execute malicious DLLs instead
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/04f60607-e0c7-40d6-8449-7899789c630f" />
+</p>
+
+- Answer: `Rundll32`
+
+### Sunny identified tcpdump on one of the compromised hosts. Assuming this was placed there by the threat actor, which technique might the APT be using here for discovery?
+
+- The attacker can use `tcpdump` for capturing, displaying, and filtering live network traffic passing through a device's network interface such as plaintext username, passwords from insecure protocols, IP addresses, OS types, etc.
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/434929c5-fab6-49f1-bfdc-506872e30c29" />
+</p>
+
+- Answer: `Network sniffing`
+
+### It looks like the APT achieved lateral movement by exploiting remote services. Which remote services should Sunny observe to identify APT activity traces?
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/185bdf8b-5edd-4e0e-afcd-081e17de83fe" />
+</p>
+
+- Answer: `SMB/Windows Admin shares`
