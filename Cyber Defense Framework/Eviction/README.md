@@ -110,8 +110,32 @@ Please visit this link(opens in new tab) to check out the MITRE ATT&CK Navigator
 
 ### It looks like the APT achieved lateral movement by exploiting remote services. Which remote services should Sunny observe to identify APT activity traces?
 
+- SMB is a Windows protocol used for file and printer sharing, while Windows Admin Shares (such as `C$` and `ADMIN$`) are hidden administrative folders that allow remote system management. Attackers often abuse these services to remotely access other computers, copy malware, and execute commands, making them a common method for lateral movement
+
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/185bdf8b-5edd-4e0e-afcd-081e17de83fe" />
 </p>
 
 - Answer: `SMB/Windows Admin shares`
+
+### It looked like the primary goal of the APT was to steal intellectual property from E-corp's information repositories. Which information repository can be the likely target of the APT?
+
+- I would assume `Sharepoint` holds a lot of important files and folders that attackers can steal
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/068c5e31-c237-495e-aa85-59f7d9d0547a" />
+</p>
+
+- Answer: `Sharepoint`
+
+### Although the APT had collected the data, it could not connect to the C2 for data exfiltration. To thwart any attempts to do that, what types of proxy might the APT use? (Answer format: <technique 1> and <technique 2>)
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/6b42df01-5b11-433a-8207-70ec154bce30" />
+</p>
+
+- Answer: `external proxy and multi-hop proxy`
+
+### Congratulations! You have helped Sunny successfully thwart the APT's nefarious designs by stopping it from achieving its goal of stealing the IP of E-corp.
+
+- Answer: `No answer needed`
