@@ -1,3 +1,6 @@
+
+WORK IN PROGRESS
+
 <p align="center">
 <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" width="150" alt="TryHackMe Logo">
 </p>
@@ -55,3 +58,9 @@ Please visit this link(opens in new tab) to check out the MITRE ATT&CK Navigator
 </p>
 
 - Answer: `Email Accounts`
+
+### E-corp has found that the APT might have gained initial access using social engineering to make the user execute code for the threat actor. Sunny wants to identify if the APT was also successful in execution. What two techniques of user execution should Sunny look out for? (Answer format: <technique 1> and <technique 2>)
+
+- The attacker might have tricked the user into executing the code whether its through a phishing email link or opening an attachment
+<p align="center">
+</p>
