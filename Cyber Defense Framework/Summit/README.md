@@ -192,7 +192,7 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 
 - The attacker is running these from the command prompt. The commands we saw in the previous log (like `dir`, `netstat`, and `ipconfig`) are native built-in commands or utilities that run inside the Windows command line environment and the MITRE ATT&CK is `Discovery (TA0007)`
 
-- At last, we were successfully able to detect this TTP and the attacker is finally given up
+- At last, we were successfully able to detect this TTP and the attacker finally gave up
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/54ac31d9-098f-4a59-8cea-f97f0adcf4d2" />
