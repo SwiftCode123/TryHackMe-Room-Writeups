@@ -128,19 +128,8 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/961e7df4-796f-4b8a-a121-dbf181b8f4cf" />
 </p>
 
-- However, there is still one more level left called `Tools` where defenders have become better at detecting the attackers tools and this causes the attackers to make a new tool, give up or even find another tool that does the same job. I went back to `Malware Sandbox` and ran `sample5.exe`. I noticed a bunch of `POST` requests here
+- However, attackers can still leave `Network Artifacts` so we need a way to detect those as well. These can be user-agent string, C2 information, or URI patterns followed by the HTTP POST requests, etc. Here, I did notice a lot of HTTP POST requests which makes me think we need to create a Sigma detection rule for this
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e8dbb697-db43-44d5-8393-46ab8c64ec51" />
-</p>
-
-- Naturally, I first tried blocking the connection to that IP address via the `Firewall Manager` but that did not seem to work
-
-<p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a74232a3-2b39-4562-8e26-b2d7deda9874" />
-</p>
-
-- Then, I tried blocking the domain but that did not work as well
-<p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ab49a17b-14d4-4390-91fe-d4499c435a0e" />
 </p>
