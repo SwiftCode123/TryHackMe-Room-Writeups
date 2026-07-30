@@ -2,7 +2,6 @@
 <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" width="150" alt="TryHackMe Logo">
 </p>
 
-# 🚧 WORK IN PROGRESS 🚧
 # Summit
 |  Room Name | Summit |
 |----------|-------|
@@ -108,7 +107,8 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0c606265-6f7d-4f5c-be67-8dcec64275a9" />
 
-- Out of these four, it made the most sense to me to click on `Sysmon Event Logs`
+- Out of these four, I clicked on `Sysmon Event Logs` as it can provide information about CLI activity, process creations, network connections, file creation which is what we want
+
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/222c7f8e-be62-4afd-8889-2e0e5882c146" />
 </p>
@@ -128,8 +128,92 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/961e7df4-796f-4b8a-a121-dbf181b8f4cf" />
 </p>
 
-- However, attackers can still leave `Network Artifacts` so we need a way to detect those as well. These can be user-agent string, C2 information, or URI patterns followed by the HTTP POST requests, etc. Here, I did notice a lot of HTTP POST requests which makes me think we need to create a Sigma detection rule for this
+- However, attackers can still leave `Network Artifacts` so we need a way to detect those as well. These can be user-agent string, C2 information, or URI patterns followed by the HTTP POST requests, etc. I generated the report for `sample5.exe` and here, I did notice a lot of HTTP POST requests which makes me think we need to create a Sigma detection rule for this as well
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e8dbb697-db43-44d5-8393-46ab8c64ec51" />
 </p>
+
+- In the image above, I noticed that `sample5.exe` connects to `51.102.10.19:443` to download `beacon.bat` and then `beacon.bat` keeps making POST requests to `51.102.10.19:443`. Now, in the email the attacker gave me a `outgoing_connections.log` file to take a look at and so I did
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5cd61aa3-5bd1-480f-8b2b-077de345d2aa" />
+</p>
+
+- I noticed the repeated connections from `10.10.15.12` to `51.102.10.19:443` that I had identified in the report and noted down the size as well (`97 bytes`). Also something to note is the frequency of the requests. We can see that each request made from these two IP addresses is in 30 minute intervals
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/2a0d25e0-df2b-4c5e-8025-2a0ed027bf95" />
+</p>
+
+- I clicked on `Sysmon Log Events` because I wanted to detect any network connections made
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0d384e58-5ce4-4f56-83aa-dace64b6f7e9" />
+</p>
+
+- Then on `Network Connections`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3e2fc170-c55a-4ab4-b068-19d2067a2707" />
+</p>
+
+- I filled in the all values. Note that 30 minutes is equal to 1800 seconds. Both `Remote IP` and `Remote Port` are set to `Any` as the attacker could change those easily. We identified `Size` to be `97` bytes from the `outgoing_connections.log` file and the `ATT&CK ID` is `Command and Control` as this is most likely malware trying to keep a connection to a C2 server
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c0251c06-575d-4738-9020-c273b8efd468" />
+</p>
+
+- We can see the fully generated Sigma rule
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/711787a1-4949-4852-beeb-b41e4337e006" />
+</p>
+
+- I was successful in stumping the attacker once again
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/86a6b970-a479-4440-8f03-84cb24ba649d" />
+</p>
+
+- However, there is one more layer on the `Pyramid Of Pain` and those are detecting TTPs which are the tactics, techniques and procedures of the attacker. Essentially, the attacker's whole objectives/goals/way of attacking and if we were to detect a TTP, it would be very difficult for the attacker to evade this defense
+
+- This time I was given some commands in the `commands.log` file
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3910ec99-eed6-4e3c-b6c9-31fe78233147" />
+</p>
+
+- From what I can deduce, the attacker is gathering who has admin privileges in the system (`net localgroup administrator`), `ver` checks OS version, `systeminfo` is a full report of the system architecture, hardware, and OS configuration, `ipconfig /all` is all the network adapter details (IP addresses, DNS servers, etc.), `netstat -ano` is all the active network connections and open ports and lastly, `net start` displays all the Windows services. The attacker appends all of this information to the `exfiltr8.log` file
+
+- Therefore, what we can do is make a Sigma rule that detects this commands specifically the `exfiltr8.log` one because that is the common one
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9a56fa53-2a04-4496-916c-70371783f08a" />
+</p>
+
+- The attacker is running these from the command prompt. The commands we saw in the previous log (like `dir`, `netstat`, and `ipconfig`) are native built-in commands or utilities that run inside the Windows command line environment and the MITRE ATT&CK is `Discovery (TA0007)`
+
+- At last, we were successfully able to detect this TTP and the attacker is finally given up
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/54ac31d9-098f-4a59-8cea-f97f0adcf4d2" />
+</p>
+
+## 🚩 Flags
+
+## Task 1
+**Flag:** `THM{********************************}`
+
+## Task 2
+**Flag:** `THM{********************************}`
+
+## Task 3
+**Flag:** `THM{********************************}`
+
+## Task 4
+**Flag:** `THM{********************************}`
+
+## Task 5
+**Flag:** `THM{********************************}`
+
+## Task 6
+**Flag:** `THM{********************************}`
