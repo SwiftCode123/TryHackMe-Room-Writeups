@@ -91,7 +91,7 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/21904155-6b9e-4f7e-a3d7-a8ec1415545d" />
 </p>
 
-- However, like the past three times, the attacker will not give up and we must keep trying. `Host Artifacts` or `Network Artifacts` are above `Domain Names` on the pyramid and these are basically traces/clues that malware/attackers leave behind such as registry values, suspicious process execution, IOCs, or user-agent strings, C2 information, etc. respectively. I went back to `Malware Sandbox` and uploaded the `sample4.exe` and it generated the report
+- However, like the past three times, the attacker will not give up and we must keep trying. `Host Artifacts` is above `Domain Names` on the pyramid and these are basically traces/clues that malware/attackers leave behind such as registry values, suspicious process execution, IOCs, etc. I went back to `Malware Sandbox` and uploaded the `sample4.exe` and it generated the report
 
 - I scrolled down and we can see the `Registry Activity` here. The attacker changed the registry value to a value of `1` to disable real time monitoring. This means it set to "True" or "Enabled" that real time monitoring is off
 
