@@ -18,6 +18,12 @@ Description:
 Can you chase a simulated adversary up the Pyramid of Pain until they finally back down?
 ```
 
+## Scenario
+
+After participating in one too many incident response activities, PicoSecure has decided to conduct a threat simulation and detection engineering engagement to bolster its malware detection capabilities. You have been assigned to work with an external penetration tester in an iterative purple-team scenario. The tester will be attempting to execute malware samples on a simulated internal user workstation. At the same time, you will need to configure PicoSecure's security tools to detect and prevent the malware from executing
+
+Following the Pyramid of Pain's ascending priority of indicators, your objective is to increase the simulated adversaries' cost of operations and chase them away for good. Each level of the pyramid allows you to detect and prevent various indicators of attack
+
 ## Reference
 
 - This is a really good image to describe the `Pyramid Of Pain`
