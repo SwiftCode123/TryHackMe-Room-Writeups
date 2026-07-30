@@ -40,4 +40,4 @@ This repository contains all my public TryHackMe write-ups, including walkthroug
     - [Elastic Stack: The Basics](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Core%20SOC%20Solutions/Elastic%20Stack%3A%20The%20Basics/README.md)
   - [Cyber Defense Framework](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/tree/main/Cyber%20Defense%20Framework)
     - [Pyramid Of Pain](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Cyber%20Defense%20Framework/Pyramid%20Of%20Pain/README.md)
-    - [Summit (CTF Challenge 🚩)]()
+    - [Summit (CTF Challenge 🚩)](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Cyber%20Defense%20Framework/Summit/README.md)
