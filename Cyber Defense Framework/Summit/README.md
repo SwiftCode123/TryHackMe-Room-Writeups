@@ -89,3 +89,40 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/21904155-6b9e-4f7e-a3d7-a8ec1415545d" />
 </p>
+
+- However, like the past three times, the attacker will not give up and we must keep trying. `Host Artifacts` or `Network Artifacts` are above `Domain Names` on the pyramid and these are basically traces/clues that malware/attackers leave behind such as registry values, suspicious process execution, IOCs, or user-agent strings, C2 information, etc. respectively. I went back to `Malware Sandbox` and uploaded the `sample4.exe` and it generated the report
+
+- I scrolled down and we can see the `Registry Activity` here. The attacker changed the registry value to a value of `1` to disable real time monitoring. This means it set to "True" or "Enabled" that real time monitoring is off
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a09629ba-1a3d-4268-9bcd-646fb810c6d1" />
+</p>
+
+- Now, the only one left here was `Sigma Rule Builder` out of all the other options so I clicked on that
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9f737a4c-7968-4e7b-a39e-0f7504d3caff" />
+</p>
+
+- I clicked on `Create Sigma Rule`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0c606265-6f7d-4f5c-be67-8dcec64275a9" />
+
+- Out of these four, it made the most sense to me to click on `Sysmon Event Logs`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/222c7f8e-be62-4afd-8889-2e0e5882c146" />
+</p>
+
+- I clicked on `Registry modifications` since that is what we want
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d1d75e91-cd32-4894-bfe0-07b299711ab3" />
+</p>
+
+- I filled in all the values correctly
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/37fea417-571f-44e4-b1d4-e9c581b1d5b0" />
+</p>
+
+- We were successful able to detect this attack making it even harder for the attacker
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/961e7df4-796f-4b8a-a121-dbf181b8f4cf" />
+</p>
