@@ -17,6 +17,14 @@ Subscription type: Premium
 Description:
 Can you chase a simulated adversary up the Pyramid of Pain until they finally back down?
 ```
+
+## Reference
+
+- This is a really good image to describe the `Pyramid Of Pain`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a23b000c-c9da-44f1-8d09-f19d879b1e21" />
+</p>
+
 ## Solution
 
 - First thing I did was go to the website that TryHackMe had given me and read the email
