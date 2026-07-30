@@ -127,7 +127,7 @@ Please visit this link(opens in new tab) to check out the MITRE ATT&CK Navigator
 
 ### Although the APT had collected the data, it could not connect to the C2 for data exfiltration. To thwart any attempts to do that, what types of proxy might the APT use? (Answer format: <technique 1> and <technique 2>)
 
-- External proxies are the attacker sends the stolen data through another computer or server on the internet that acts as a middleman before it reaches the C2 server. This helps hide the real destination and multi-hop proxies are where instead of using just one middleman, the attacker sends the data through multiple proxies in a chain. Each hop makes it harder for defenders to trace where the traffic is ultimately going
+- External proxies is where the attacker sends the stolen data through another computer or server on the internet that acts as a middleman before it reaches the C2 server. This helps hide the real destination and multi-hop proxies are where instead of using just one middleman, the attacker sends the data through multiple proxies in a chain. Each hop makes it harder for defenders to trace where the traffic is ultimately going
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/6b42df01-5b11-433a-8207-70ec154bce30" />
