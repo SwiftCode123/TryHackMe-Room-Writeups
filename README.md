@@ -2,6 +2,10 @@
 
 TryHackMe: https://tryhackme.com/
 
+## TryHackMe Profile
+
+Profile: [https://tryhackme.com/](https://tryhackme.com/p/dhruv.tr03)
+
 This repository contains all my public TryHackMe write-ups, including walkthroughs and CTF challenge solutions. I aim to keep each write-up well-formatted, structured, and easy to follow
 
 > **Note:** Rooms marked with the 🚩 icon are CTF-style challenges rather than standard walkthroughs
@@ -37,7 +41,3 @@ This repository contains all my public TryHackMe write-ups, including walkthroug
   - [Cyber Defense Framework](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/tree/main/Cyber%20Defense%20Framework)
     - [Pyramid Of Pain](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Cyber%20Defense%20Framework/Pyramid%20Of%20Pain/README.md)
     - [Summit (CTF Challenge 🚩)]()
- 
-## TryHackMe Profile
-
-Profile: [https://tryhackme.com/](https://tryhackme.com/p/dhruv.tr03)
