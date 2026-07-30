@@ -61,6 +61,14 @@ Please visit this link(opens in new tab) to check out the MITRE ATT&CK Navigator
 
 ### E-corp has found that the APT might have gained initial access using social engineering to make the user execute code for the threat actor. Sunny wants to identify if the APT was also successful in execution. What two techniques of user execution should Sunny look out for? (Answer format: <technique 1> and <technique 2>)
 
-- The attacker might have tricked the user into executing the code whether its through a phishing email link or opening an attachment
+- The attacker might have tricked the user into executing the code whether its through opening an attachment or clicking a link. Below, I found the two sub-techniques under the `User Execution` technique under the `Execution` tactic. `Malicious File` gets the user to click on a Microsoft Office attachment with a malicious macros script and `Malicious Link` gets the user to click on malicious hyperlinks
+
 <p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d3606d48-afc9-4a11-9355-c5290e2e544a" />
 </p>
+
+- Answer: `Malicious file and malicious link`
+
+### If the above technique was successful, which scripting interpreters should Sunny search for to identify successful execution? (Answer format: <technique 1> and <technique 2>)
+
+- 
