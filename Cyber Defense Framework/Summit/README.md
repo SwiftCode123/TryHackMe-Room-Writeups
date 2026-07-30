@@ -2,6 +2,7 @@
 <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" width="150" alt="TryHackMe Logo">
 </p>
 
+# 🚧 WORK IN PROGRESS 🚧
 # Summit
 |  Room Name | Summit |
 |----------|-------|
@@ -98,7 +99,7 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a09629ba-1a3d-4268-9bcd-646fb810c6d1" />
 </p>
 
-- Now, the only one left here was `Sigma Rule Builder` out of all the other options so I clicked on that
+- Now, we need a way to detect this attack and so I clicked on the `Sigma Rule Builder` option
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9f737a4c-7968-4e7b-a39e-0f7504d3caff" />
 </p>
@@ -125,4 +126,21 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 - We were successful able to detect this attack making it even harder for the attacker
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/961e7df4-796f-4b8a-a121-dbf181b8f4cf" />
+</p>
+
+- However, there is still one more level left called `Tools` where defenders have become better at detecting the attackers tools and this causes the attackers to make a new tool, give up or even find another tool that does the same job. I went back to `Malware Sandbox` and ran `sample5.exe`. I noticed a bunch of `POST` requests here
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e8dbb697-db43-44d5-8393-46ab8c64ec51" />
+</p>
+
+- Naturally, I first tried blocking the connection to that IP address via the `Firewall Manager` but that did not seem to work
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a74232a3-2b39-4562-8e26-b2d7deda9874" />
+</p>
+
+- Then, I tried blocking the domain but that did not work as well
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ab49a17b-14d4-4390-91fe-d4499c435a0e" />
 </p>
