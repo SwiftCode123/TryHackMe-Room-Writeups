@@ -63,4 +63,4 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5d8efeb3-befe-45ca-ba44-c8a35f434124" />
 </p>
 
-- However, remembering from the `Pyramid of Pain`, an attacker can just get a new public IP address as stated in the email above. It is not hard for the attacker to evade this defense but was a bit harder for the attacker considering `IP addresses` are above `Hash Values` in the pyramid
+- However, remembering from the `Pyramid of Pain`, an attacker can just get a new public IP address as stated in the email above. It is not hard for the attacker to evade this defense but it was a bit harder for the attacker considering `IP addresses` are above `Hash Values` in the pyramid
