@@ -179,7 +179,7 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 
 - This time I was given some commands in the `commands.log` file
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3910ec99-eed6-4e3c-b6c9-31fe78233147" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5bf18d65-0879-406f-a240-9a1157b85adc" />
 </p>
 
 - From what I can deduce, the attacker is gathering who has admin privileges in the system (`net localgroup administrator`), `ver` checks OS version, `systeminfo` is a full report of the system architecture, hardware, and OS configuration, `ipconfig /all` is all the network adapter details (IP addresses, DNS servers, etc.), `netstat -ano` is all the active network connections and open ports and lastly, `net start` displays all the Windows services. The attacker appends all of this information to the `exfiltr8.log` file
