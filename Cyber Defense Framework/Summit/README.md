@@ -107,7 +107,7 @@ Can you chase a simulated adversary up the Pyramid of Pain until they finally ba
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0c606265-6f7d-4f5c-be67-8dcec64275a9" />
 
-- Out of these four, I clicked on `Sysmon Event Logs` as it can provide information about CLI activity, process creations, network connections, file creation which is what we want
+- Out of these four, I clicked on `Sysmon Event Logs` as it can provide information about CLI activity, process creations, network connections, file creation, registry value changes, etc. which is what we want
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/222c7f8e-be62-4afd-8889-2e0e5882c146" />
