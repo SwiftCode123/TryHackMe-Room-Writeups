@@ -1,4 +1,4 @@
-<p align="center">
+<img width="1512" height="831" alt="image" src="https://github.com/user-attachments/assets/c672fbb7-9bcd-4331-a7ca-417bb979bcc5" /><p align="center">
 <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" width="150" alt="TryHackMe Logo">
 </p>
 
@@ -111,3 +111,42 @@ Learn all the components that make up an email.
 - Answer: `THM{BENIGN_PDF_ATTACHMENT}`
 
 ## Task 6
+
+### Which reputable organization is being spoofed in this phishing attempt?
+- The first line in the email header tells us this is from "`Home Depot`"
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/bd21ac71-70f8-4ccf-9682-c718bd29d834" />
+</p>
+
+- Answer: `Home Depot`
+
+### What is the sender's email address?
+- The sender's email address is right next to the spoofed organization's name
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a149fb8d-e680-492c-9a8a-ac1c888139af" />
+</p>
+
+- Answer: `support@teckbe.com`
+
+### Inspect the email message source. What is the defanged (opens in new tab) `X-Originating-IP`?
+
+- The `X-Originating-IP` is here
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d60e98cc-92ad-4e02-9ced-6675cb42853c" />
+</p>
+
+- Pasting into CyberChef, we get the answer
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/84f5473a-790b-4951-a858-7325f9d10a58" />
+</p>
+
+- Answer: `103[.]234[.]236[.]83`
+
+- Note: Defanged means to replace special characters such as `@` and `.` in URLs, domains, and email addresses to make them unclickable to prevent accidental clicks
+
+### Continue analyzing the email message source. Which mail server generated the `Authentication-Results` header?
+
+- The mail server is highlighted below
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3a596c32-0214-4bed-9ab6-5bcfdebf7a5b" />
+</p>
