@@ -78,6 +78,36 @@ Learn all the components that make up an email.
 
 ## Task 5
 
-### 
+### Open up the `email2.txt` file to view the source of an attachment. What is the `Content-Type` of the attachment?
+
+- I opened up `email2.txt` and the `Content-Type` is listed at the top
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1e5b37b4-c2be-4ced-9ba3-379309c0d740" />
+</p>
+
+- Answer: `application/pdf`
+
+### What is the name of the attachment from the previous question?
+
+- The name of the attachment was listed right next to the `Content-Type`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c050bb50-653f-4f64-a45b-c59a4d0d876a" />
+</p>
+
+- Answer: `zmqpalgh.pdf`
+
+### Decode the base64 string using either a PDF converter (opens in new tab) or CyberChef (opens in new tab). What is the hidden flag value?
+
+- I first copied the entire base64 string
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1a7242db-a89e-4cbd-a299-aba448498037" />
+</p>
+
+- Then, I opened up CyberChef and converted it to find the hidden flag
+<p align="center">
+<img width="1512" height="859" alt="image" src="https://github.com/user-attachments/assets/50ba71ab-1ace-4d90-8fd5-390ef24bb192" />
+</p>
+
+- Answer: `THM{BENIGN_PDF_ATTACHMENT}`
 
 ## Task 6
