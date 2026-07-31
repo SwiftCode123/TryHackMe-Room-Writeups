@@ -52,5 +52,29 @@ Learn all the components that make up an email.
 - Answer: `IMAP` 
 
 ## Task 4
+
+### What is the full subject line of `email1.eml`?
+
+- I clicked on `View` > `Message Source`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/019dee1e-ec96-4128-8f04-a15d30d432cd" />
+</p>
+
+- After scrolling a bit, we can see the full subject line
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/74a08f0f-6379-40bb-bc9e-ec7d363c9642" />
+</p>
+
+- Answer: `Help protect your budget by protecting your home`
+
+### View the message source of `email1.eml` using Thunderbird in your VM. What the IP address listed as the `X-Originating-Ip`?
+
+- The originating IP address is listed here
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c6e41edf-a32d-4f74-b676-e9dd60bcc36c" />
+</p>
+
+- Answer: `43.255.56.161`
+
 ## Task 5
 ## Task 6
