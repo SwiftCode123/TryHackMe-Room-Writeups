@@ -152,3 +152,17 @@ Learn all the components that make up an email.
 </p>
 
 - Answer: `atlas102.free.mail.gq1.yahoo.com`
+
+## Skills Learned
+
+- Understood the basic structure of an email, including headers, body, and attachments
+- Learned how email delivery works using SMTP, DNS (MX records), and IMAP
+- Analyzed email headers to identify key fields such as `Subject`, `X-Originating-IP`, and `Authentication-Results`
+- Identified attachment types and filenames from email source data
+- Decoded Base64-encoded attachments using CyberChef to inspect their contents
+- Identified indicators of phishing, including spoofed organizations, suspicious sender addresses, and originating IP addresses
+- Learned the purpose of defanging IP addresses, domains, and URLs to safely share malicious indicators
+
+## Conclusion
+
+This room provided a solid introduction to phishing analysis by covering how emails are structured and transmitted, along with the basics of inspecting headers and attachments. It demonstrated how details such as sender information, originating IPs, and authentication headers can help identify phishing attempts. Overall, it established a strong foundation for developing practical email analysis skills that can be applied in more advanced investigations
