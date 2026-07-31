@@ -41,7 +41,7 @@ Learn all the components that make up an email.
 
 ### Which service is used to look up the recipient domain’s mail server?
 
-- The SMTP server queries `DNS` for the recipient domain’s mail server and `DNS` looks up the MX records for that domain
+- The SMTP server queries `DNS` for the recipient domain’s mail server and `DNS` looks up the MX records for that domain which contain information about the incoming mail servers that accept mails for that domain
 
 - Answer: `DNS`
 
