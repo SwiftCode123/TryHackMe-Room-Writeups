@@ -22,3 +22,9 @@ Learn all the components that make up an email.
 ### I am ready to learn about phishing analysis!
 
 - Answer: `No answer needed`
+
+## Task 2
+## Task 3
+## Task 4
+## Task 5
+## Task 6
