@@ -35,7 +35,7 @@ Learn all the components that make up an email.
 
 ### Which protocol is responsible for sending an email from a client to a mail server?
 
-- Email client use `SMTP` (Simple Mail Transfer Protocol) to send mails to the outgoing mail server (SMTP server)
+- Email clients use `SMTP` (Simple Mail Transfer Protocol) to send mails to the outgoing mail server (SMTP server)
 
 - Answer: `SMTP`
 
