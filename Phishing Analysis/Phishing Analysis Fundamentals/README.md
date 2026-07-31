@@ -150,3 +150,5 @@ Learn all the components that make up an email.
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3a596c32-0214-4bed-9ab6-5bcfdebf7a5b" />
 </p>
+
+- Answer: `atlas102.free.mail.gq1.yahoo.com`
