@@ -105,7 +105,7 @@ Learn all the components that make up an email.
 
 - Then, I opened up CyberChef and converted it to find the hidden flag
 <p align="center">
-<img width="1512" height="859" alt="image" src="https://github.com/user-attachments/assets/50ba71ab-1ace-4d90-8fd5-390ef24bb192" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/50ba71ab-1ace-4d90-8fd5-390ef24bb192" />
 </p>
 
 - Answer: `THM{BENIGN_PDF_ATTACHMENT}`
