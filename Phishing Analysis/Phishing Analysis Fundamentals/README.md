@@ -27,7 +27,7 @@ Learn all the components that make up an email.
 
 ### Identify the domain used in the following email address: `hatsalesman@tryhatme.com`
 
-- The domain comes after the `@` symbol and specifics the mail server responsible for receiving the message
+- The domain comes after the `@` symbol and specifies the mail server responsible for receiving the message
 
 - Answer: `tryhatme.com`
 
