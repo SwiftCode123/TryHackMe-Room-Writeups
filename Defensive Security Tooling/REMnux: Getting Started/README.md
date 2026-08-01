@@ -162,6 +162,8 @@ Note: `windows.pslist.PsList` shows all the current active running processes
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/565346fa-d914-4710-96e1-762ecd26f410" />
 </p>
 
+- Answer: `C:\Intel\ivecuqmanpnirkt615\@WanaDecryptor@.exe`
+
 ## Skills Learned
 
 * Analyzed malicious Microsoft Office documents using oledump.py
