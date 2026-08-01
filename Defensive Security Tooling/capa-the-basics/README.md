@@ -208,8 +208,6 @@ Note: The Capability is the rule name but without the dashes
 ### Which feature of this CAPA Web Explorer allows you to filter options or results?
 - Answer: `Global Search Box`
 
-You can add the following sections to the end of your write-up.
-
 ## Summary
 * Learned the fundamentals of CAPA, a malware capability analysis tool that identifies behaviors without requiring full reverse engineering
 * Explored common CAPA command-line options, including `-h` for help, `-v` for verbose output, `-vv` for very verbose output, and `-j` for exporting results as JSON
