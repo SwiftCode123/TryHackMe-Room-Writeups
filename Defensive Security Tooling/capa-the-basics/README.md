@@ -198,6 +198,8 @@ Note: The Capability is the rule name but without the dashes
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1e3e8f69-433d-4316-882a-9bb50a339138" />
 </p>
 
+- Answer: `RegOpenKeyEx`
+
 ## Task 7
 ### Which parameter allows you to output the result of CAPA into a .json file?
 - Answer: `-j`
