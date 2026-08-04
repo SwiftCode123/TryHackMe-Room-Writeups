@@ -153,7 +153,7 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9f603bdb-694c-43be-9906-fb274e358628" />
 </p>
 
-- I scrolled down to the `Connections` section and there is only one `AcroRd32.exe` that is flagged as malicious
+- I scrolled down to the `Connections` section and there is only one IP address associated with `AcroRd32.exe` that is flagged as malicious
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e35f9da6-fc52-4712-b3a6-8e615dda846d" />
