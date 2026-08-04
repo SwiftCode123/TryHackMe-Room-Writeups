@@ -22,3 +22,11 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 ### I am ready to learn about phishing analysis!
 
 - Answer: `No answer needed`
+
+## Task 2
+
+### I understand the key indicators to look for when analyzing an email.
+
+- Answer: `No answer needed`
+
+## Task 3
