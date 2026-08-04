@@ -173,7 +173,7 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 
 ## Task 9
 
-### How does ANYRUN classify the .xlsx attachment?
+### How does ANYRUN classify the `.xlsx` attachment?
 
 - Like the previous task, the classification is on the top right hand corner
 <p align="center">
