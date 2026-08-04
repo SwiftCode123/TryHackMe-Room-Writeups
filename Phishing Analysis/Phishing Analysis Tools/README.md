@@ -202,7 +202,16 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 
 ### Check out the `ANYRUN` text report. What IP address is associated with the malicious domain `biz9holdings.com`?
 
-- Scrolling down to the `DNS requests` sections, we can see there is one other domain below `biz9holdings.com` that is also flagged as malicious
+- Scrolling down to the `DNS requests` section, we can see the IP address associated with the domain `biz9holdings.com`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/996e878c-6f0e-4cb5-a007-ff1b41c2cd5c" />
+</p>
+
+- Answer: `204.11.56.48`
+
+### Which other domain is classified as malicious?
+
+- We can see there is one other domain below `biz9holdings.com` that is also flagged as malicious
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9128438a-5515-4fc1-9e18-c16986ccde2d" />
