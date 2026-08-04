@@ -218,3 +218,18 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 </p>
 
 - Answer: `CVE-2017-11882`
+
+## Skills Learned
+
+* Identified common phishing indicators including spoofed branding, suspicious links, email headers, and social engineering techniques
+* Analyzed email authentication results by interpreting SPF validation and reviewing message headers for sender verification
+* Extracted key forensic artifacts such as Return-Path domains, originating IP addresses, recipients, and embedded URLs
+* Identified SHA256 hash values of suspicious attachments for malware identification and investigation
+* Used VirusTotal to evaluate URLs and attachments through multi-vendor detection results and reputation analysis
+* Investigated phishing emails and malicious attachments in ANY.RUN by reviewing behavioral analysis, process activity, network connections, DNS requests, and threat classifications
+* Identified indicators of compromise including malicious IP addresses, domains, suspicious processes, file hashes, and exploited vulnerabilities such as CVE-2017-11882
+* Practiced safely analyzing potentially malicious emails, URLs, PDFs, and Excel documents using sandbox environments without executing them on a host system
+
+## Conclusion
+
+This room introduced the core tools and techniques used to investigate phishing emails from initial inspection to behavioral analysis. By examining email headers, validating authentication records, extracting indicators of compromise, hashing attachments, and using platforms such as VirusTotal and ANY.RUN, I gained practical experience identifying malicious emails and understanding how phishing campaigns deliver and execute payloads in a controlled environment
