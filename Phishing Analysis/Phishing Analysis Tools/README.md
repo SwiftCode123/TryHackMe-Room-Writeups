@@ -48,6 +48,6 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 
 ## Task 5
 
-- I understand the available sandbox environments for safely analyzing files and URLs.
+### I understand the available sandbox environments for safely analyzing files and URLs.
 
 - Answer: `No answer needed`
