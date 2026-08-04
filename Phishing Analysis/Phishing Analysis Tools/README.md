@@ -180,7 +180,7 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e5156577-05b9-4def-a58a-d3b1f8f6b090" />
 </p>
 
-- Answer `Malicious activity`
+- Answer: `Malicious activity`
 
 ### What is the file name of the Excel attachment?
 
