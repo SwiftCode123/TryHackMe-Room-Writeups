@@ -45,3 +45,9 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 ### What command can you use in a Linux environment to obtain the SHA256 hash value of an attachment?
 
 - Answer: `sha256sum`
+
+## Task 5
+
+- I understand the available sandbox environments for safely analyzing files and URLs.
+
+- Answer: `No answer needed`
