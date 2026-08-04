@@ -170,4 +170,51 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 </p>
 
 - Answer: `svchost.exe`
+
 ## Task 9
+
+### How does ANYRUN classify the .xlsx attachment?
+
+- Like the previous task, the classification is on the top right hand corner
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e5156577-05b9-4def-a58a-d3b1f8f6b090" />
+</p>
+
+- Answer `Malicious activity`
+
+### What is the file name of the Excel attachment?
+
+- The name is listed right below the classification
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c4d19e9e-8578-43a7-be7d-62da072ca782" />
+</p>
+
+- Answer: `CBJ200620039539.xlsx`
+
+### Investigate the Excel attachment. What is the SHA256 hash value?
+
+- We can see the SHA256 hash value below
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0a02b12f-cb21-48b6-8d8d-da222b404615" />
+</p>
+
+- Answer: `5f94a66e0ce78d17afc2dd27fc17b44b3ffc13ac5f42d3ad6a5dcfb36715f3eb`
+
+### Check out the `ANYRUN` text report. What IP address is associated with the malicious domain `biz9holdings.com`?
+
+- Scrolling down to the `DNS requests` sections, we can see there is one other domain below `biz9holdings.com` that is also flagged as malicious
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9128438a-5515-4fc1-9e18-c16986ccde2d" />
+</p>
+
+- Answer: `findresults.site`
+
+### What vulnerability does this malicious attachment attempt to exploit?
+
+- The vulnerability is located here
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9d69350a-b874-4f8a-acc2-44e19801d965" />
+</p>
+
+- Answer: `CVE-2017-11882`
