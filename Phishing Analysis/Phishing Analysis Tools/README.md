@@ -116,4 +116,58 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 - Answer: `https://t.co/yuxfZm8KPg?amp=1`
 
 ## Task 8
+
+### How does `ANYRUN` classify this suspected phishing email?
+
+- In the right hand corner, we can see what `ANY.RUN` classifies this phishing email as
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/76a7fb74-0a6b-4ad9-9b43-093084510331" />
+</p>
+
+- Answer: `Suspicious activity`
+
+### What is the name of the PDF attachment?
+
+- The name is listed right below the classification
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/7f2d20e6-e58f-40b3-834b-ad381c0cc700" />
+</p>
+
+- Answer: `Payment-updateid.pdf`
+
+### Investigate the email attachment. What is the SHA256 hash of the `PDF` file?
+
+- I clicked on `Payment-updateid.pdf` and we can see below in the third row what the SHA256 hash is of this file
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/823daf65-12c4-4471-9abe-9060e59ab927" />
+</p>
+
+- Answer: `cc6f1a04b10bcb168aeec8d870b97bd7c20fc161e8310b5bce1af8ed420e2c24`
+
+### Check out the `ANYRUN` text report on the phishing email. Which IP address associated with the process `AcroRd32.exe` is flagged as malicious?
+
+- We can open up the `Text report` by clicking on `Results`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9f603bdb-694c-43be-9906-fb274e358628" />
+</p>
+
+- I scrolled down to the `Connections` section and there is only one `AcroRd32.exe` that is flagged as malicious
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e35f9da6-fc52-4712-b3a6-8e615dda846d" />
+</p>
+
+- Answer: `2.16.107.24`
+
+### Continue investigating the text report. Which Windows process is classed as `Potentially Bad Traffic`?
+
+- I scrolled down to `Threats` and there is only one process that is marked as `Potentially Bad Traffic`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/91871253-fda5-41e6-a516-e208581ceb02" />
+</p>
+
+- Answer: `svchost.exe`
 ## Task 9
