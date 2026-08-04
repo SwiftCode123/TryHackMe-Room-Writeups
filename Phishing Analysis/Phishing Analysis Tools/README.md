@@ -62,3 +62,7 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 </p>
 
 - Answer: `SafeToOpen`
+
+## Task 7
+## Task 8
+## Task 9
