@@ -60,3 +60,5 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a2adc398-452a-42ca-9892-d1cc5f6a0ac7" />
 </p>
+
+- Answer: `SafeToOpen`
