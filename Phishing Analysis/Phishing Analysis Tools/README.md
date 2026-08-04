@@ -30,3 +30,12 @@ Learn the tools used to aid an analyst to investigate suspicious emails.
 - Answer: `No answer needed`
 
 ## Task 3
+
+### According to the Messageheader analysis shown in this task, what is the SPF result for the email?
+
+- We can see the `SPF` result in green
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/de6522b4-3646-4046-a4e3-ccdffcb41539" />
+</p>
+
+- Answer: `pass`
