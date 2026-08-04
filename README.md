@@ -45,4 +45,4 @@ This repository contains all my public TryHackMe write-ups, including walkthroug
     - [Eviction (CTF Challenge 🚩)](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Cyber%20Defense%20Framework/Eviction/README.md)
   - [Phishing Analysis](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/tree/main/Phishing%20Analysis)
     - [Phishing Analysis Fundamentals](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Phishing%20Analysis/Phishing%20Analysis%20Fundamentals/README.md)
-    - [Phishing Analysis Tools]() 🚧 IN PROGRESS 🚧  
+    - [Phishing Analysis Tools](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Phishing%20Analysis/Phishing%20Analysis%20Tools/README.md) 🚧 IN PROGRESS 🚧  
