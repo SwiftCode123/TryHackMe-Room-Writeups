@@ -33,3 +33,13 @@ Learn how to defend against phishing emails.
 </p>
 
 - Answer: `3`
+
+### What is the intended action of an email that returns a SoftFail verification result?
+
+- The intended action for `SoftFail` is detailed below. Essentially, it means that the sending mail server is not listed as an authorized sender but the receiving server still accepts it but flags it as suspicious
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/313682eb-fad5-4372-a3ea-d726a9c2c1da" />
+</p>
+
+- Answer: `Flag`
