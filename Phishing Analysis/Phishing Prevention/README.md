@@ -22,3 +22,13 @@ Learn how to defend against phishing emails.
 ### I understand the learning objectives and am ready to learn about phishing prevention!
 
 - Answer: `No answer needed`
+
+## Task 2
+### Based on TryHackMe's SPF record above, how many domains are authorized to send email on its behalf?
+
+- We can see how many domains there are below in THM's SPF record
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ec20f402-8ac2-4cef-b727-7b1840c46451" />
+</p>
+
+- Answer: `7`
