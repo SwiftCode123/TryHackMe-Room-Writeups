@@ -233,6 +233,8 @@ Note: TryHackMe had you type the IP address with `[.]` in betweens
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3966a671-4c21-4329-ac45-0433fae5ea24" />
 </p>
 
+- Answer: `81`
+
 ### During our analysis, we found a process called cobaltstrike.exe. What is the parent process of cobaltstrike.exe? 
 
 - The child process (`cobaltstrike.exe`) was under `explorer.exe`
