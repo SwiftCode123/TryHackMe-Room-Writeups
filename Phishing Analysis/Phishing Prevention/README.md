@@ -26,9 +26,10 @@ Learn how to defend against phishing emails.
 ## Task 2
 ### Based on TryHackMe's SPF record above, how many domains are authorized to send email on its behalf?
 
-- We can see how many domains there are below in THM's SPF record
+- We can see how many domains there are below in THM's SPF record. There is `_spf.google.com`,
+`email.chargebee.com`, and `7168674.spf05.hubspotemail.net`
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ec20f402-8ac2-4cef-b727-7b1840c46451" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5c9b5c84-9896-45f6-be01-a5e76cbef20c" />
 </p>
 
-- Answer: `7`
+- Answer: `3`
