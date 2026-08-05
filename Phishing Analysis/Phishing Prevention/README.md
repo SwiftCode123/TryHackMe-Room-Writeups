@@ -17,3 +17,8 @@ Subscription type: Premium
 Description:
 Learn how to defend against phishing emails.
 ```
+
+## Task 1
+### I understand the learning objectives and am ready to learn about phishing prevention!
+
+- Answer: `No answer needed`
