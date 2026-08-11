@@ -71,3 +71,7 @@ Learn how to defend against phishing emails.
 - Let's say we have two character's Bob and Mary. Bob decides to encrypt the message using Mary's public key and only Mary can decrypt it with her private key
 
 - Answer: `Encryption`
+
+## Task 6
+
+### Which Wireshark filter can you use to narrow down your results based on SMTP response codes?
