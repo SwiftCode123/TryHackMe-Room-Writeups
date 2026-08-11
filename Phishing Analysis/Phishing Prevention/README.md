@@ -52,7 +52,7 @@ Learn how to defend against phishing emails.
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a0bd93d6-6cda-4b2b-bff3-cd1af8f4b415" />
 </p>
 
-- `permerror` means there is a permanent failure and it could because of a missing/incorrect DNS record, a forwarding server making a modification, or a misconfiguration in DKIM setup
+- `permerror` means there is a permanent failure and it could be because of a missing/incorrect DNS record, a forwarding server making a modification, or a misconfiguration in DKIM setup
 
 - Answer: `no key for signature`
 
