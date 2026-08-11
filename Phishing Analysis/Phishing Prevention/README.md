@@ -45,3 +45,11 @@ Learn how to defend against phishing emails.
 - Answer: `Flag`
 
 ## Task 3
+
+### Based on the sample header above, what is the reason for the `permerror`?
+- The reason is listed to the right of the `dkim=permerror` message
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a0bd93d6-6cda-4b2b-bff3-cd1af8f4b415" />
+</p>
+
+## Task 4
