@@ -46,5 +46,6 @@ This repository contains all my public TryHackMe write-ups, including walkthroug
   - [Phishing Analysis](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/tree/main/Phishing%20Analysis)
     - [Phishing Analysis Fundamentals](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Phishing%20Analysis/Phishing%20Analysis%20Fundamentals/README.md)
     - [Phishing Analysis Tools](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Phishing%20Analysis/Phishing%20Analysis%20Tools/README.md)
+    - [Phishing Prevention](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Phishing%20Analysis/Phishing%20Prevention/README.md)
 ### SOC Simulator
   - 🚧 _New Writeup Coming Soon_ 🚧
