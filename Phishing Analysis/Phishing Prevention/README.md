@@ -117,4 +117,6 @@ Learn how to defend against phishing emails.
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/2696f857-2981-4afc-8ca9-c83ed0aeff9b" />
 </p>
 
+- Answer: `6`
+
 ## Task 7
