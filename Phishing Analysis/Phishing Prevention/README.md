@@ -120,3 +120,60 @@ Learn how to defend against phishing emails.
 - Answer: `6`
 
 ## Task 7
+
+### How many SMTP packets are available for analysis?
+
+- Just typing in `smtp` gives us the total number of packets
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/216a85f4-3a96-4249-aa6f-e7f7df68fbc0" />
+</p>
+
+- Answer: `512`
+
+### What is the name of the attachment in packet `270`?
+
+- I isolated packet `270` via the query `frame.number == 270 && smtp`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/401a7289-24b4-4cda-bbd8-141cc6b6a647" />
+</p>
+
+- I clicked on the packet and scrolled all the way down under `Simple Mail Transfer Protocol` and saw the attachment name
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a73ceebb-e441-4eda-91c2-fa9c69597c76" />
+</p>
+
+- Answer: `document.zip`
+
+### According to the message in packet 270, which Host IP address is not responding, making the message undeliverable?
+
+- Looking up, we can see the host IP address that is not responding
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/83e3c019-2eb4-4e1a-8d0b-1fab497aa494" />
+</p>
+
+- Answer: `212.253.25.152`
+
+### By filtering for `imf`, which email client was used to send the message containing the attachment `attachment.scr`?
+
+- We can filter down for `imf` and which packet contains `attachment.scr` via the query `imf contains attachment.scr`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8f01c320-f3ca-433d-8f2b-7375ab658b98" />
+</p>
+
+- We can see the specific email client as indicated by `X-Mailer`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a9eb6bfb-dbdc-4196-87a1-308f1eb243aa" />
+</p>
+
+- Answer: `Microsoft Outlook Express 6.00.2600.0000`
+
+### Which type of encoding is used for this potentially malicious attachment?
+
+- We can see the type of content encoding in `Content-Transfer-Encoding`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/dd74a866-d81d-4da7-976b-a1408fba8cef" />
+</p>
+
+- Answer: `base64`
