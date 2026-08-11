@@ -106,8 +106,7 @@ Learn how to properly report, escalate, and communicate about high-risk SOC aler
 
 - Answer: `THM{good_job_escalating_your_first_alert}`
 
-### Now, investigate the second new alert and provide a detailed alert comment.
-What flag did you get after escalating this alert according to the workflow?
+### Now, investigate the second new alert and provide a detailed alert comment. What flag did you get after escalating this alert according to the workflow?
 
 - After providing a detailed alert comment, we get the flag
 
