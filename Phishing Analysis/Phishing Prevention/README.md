@@ -57,3 +57,10 @@ Learn how to defend against phishing emails.
 - Answer: `no key for signature`
 
 ## Task 4
+
+### Which DMARC policy provides the greatest amount of protection by blocking emails that fail the DMARC check?
+
+- All emails that fail the DMARC check will be rejected based on the `p=reject` policy tag
+
+- Answer: `p=reject`
+
