@@ -68,6 +68,6 @@ Learn how to defend against phishing emails.
 
 ### Which S/MIME component ensures that only the intended recipient can read the contents of an email message?
 
-- Let's say we have two character's Bob and Mary. Bob decides to encrypt the message using Mary's public key and only Mary can decrypt it with he private key
+- Let's say we have two character's Bob and Mary. Bob decides to encrypt the message using Mary's public key and only Mary can decrypt it with her private key
 
 - Answer: `Encryption`
