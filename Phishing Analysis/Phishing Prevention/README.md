@@ -184,3 +184,17 @@ Learn how to defend against phishing emails.
 - With sandboxing, we can isolate and test suspicious links/attachments to check for malicious behavior
 
 - Answer: `Sandboxing`
+
+## Skills Learned
+
+* Understood how SPF, DKIM, and DMARC help authenticate email senders and detect unauthorized messages
+* Interpreted SPF SoftFail and DKIM `permerror` results to identify email authentication failures
+* Identified the `p=reject` DMARC policy as a method for blocking emails that fail authentication checks
+* Understood how S/MIME encryption uses public and private keys to protect email contents from unauthorized access
+* Used Wireshark filters such as `smtp.response.code` to analyze SMTP response codes and identify blocked messages
+* Analyzed SMTP packets and email headers to identify attachments, email clients, delivery errors, and message details
+* Identified Base64 as an encoding method used to transfer email attachments
+* Learned the purpose of sandboxing for safely analyzing suspicious attachments without risking infection on real systems
+
+## Conclusion
+This room provided a better understanding of how phishing emails can be identified and prevented through email authentication, header analysis, and network traffic inspection. I learned how SPF, DKIM, and DMARC help verify legitimate senders, how Wireshark can be used to investigate SMTP traffic and suspicious attachments, and how sandboxing can safely analyze potentially malicious files. Overall, the room helped strengthen my understanding of the different techniques used to detect and prevent phishing attacks
