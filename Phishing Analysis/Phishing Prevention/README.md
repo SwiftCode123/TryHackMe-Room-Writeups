@@ -177,3 +177,10 @@ Learn how to defend against phishing emails.
 </p>
 
 - Answer: `base64`
+
+## Task 7
+### A security team wants to implement a control to detect hidden malware inside email attachments. They need a way to analyze suspicious files without risking infection on real systems. Which protective technique would allow them to observe a file's behavior safely?
+
+- With sandboxing, we can isolate and test suspicious links/attachments to check for malicious behavior
+
+- Answer: `Sandboxing`
