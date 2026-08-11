@@ -52,4 +52,6 @@ Learn how to defend against phishing emails.
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a0bd93d6-6cda-4b2b-bff3-cd1af8f4b415" />
 </p>
 
+- Answer: `no key for signature`
+
 ## Task 4
