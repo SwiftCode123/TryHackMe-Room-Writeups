@@ -95,6 +95,8 @@ As a member of the IT department at SwiftSpend Financial, you are responsible fo
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/45fcca26-68c7-4842-a3c4-cbf7bdf5fda5" />
 </p>
 
+- Answer: `ba3c15267393419eb08c7b2652b8b6b39b406ef300ae8a18fee4d16b19ac9686`
+
 - ### Investigate the file hash from the previous question using VirusTotal (opens in new tab). Aside from phishing, what other threat category is assigned to the ZIP archive?
 - The threat category is located next to `Threat Categories`
 <p align="center">
