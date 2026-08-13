@@ -70,3 +70,41 @@ As a member of the IT department at SwiftSpend Financial, you are responsible fo
 </p>
 
 - Answer: `kennaroads.buzz`
+
+### Open the attachment in your VM web browser. Which company is the login page impersonating?
+- The companies name is right above the user's email address
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3735e7a6-e90b-44bc-80ba-e8409934adcc" />
+</p>
+
+- Answer: `Microsoft`
+
+### Let’s check if the attacker left any files exposed on the same website. Navigate to the `/data` directory. What is the name of the archive file?
+- I first deleted everything in the URL except for `kennaroads.buzz/data/` and we can see below the archive file which is located on the website
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a3853a67-8bed-414e-a9de-a88edc4ced07" />
+</p>
+
+- Answer: `Update365.zip`
+
+### Download the phishing kit archive to your virtual environment. Using the sha256sum command, what is the SHA256 hash of the file?
+
+- I downloaded the `Update365.zip` file that was on the website by clicking on it and then I ran `sha256sum Update365.zip` to get the hash
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/45fcca26-68c7-4842-a3c4-cbf7bdf5fda5" />
+</p>
+
+- ### Investigate the file hash from the previous question using VirusTotal (opens in new tab). Aside from phishing, what other threat category is assigned to the ZIP archive?
+- The threat category is located next to `Threat Categories`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/cfcccaf8-796d-4e26-8b5a-82da3aed7b1b" />
+</p>
+
+- Answer: `Trojan`
+
+### Review the VirusTotal Details page for the phishing kit. How many files are contained within the archive?
+- Under the `Details` tab, we can see the amount of `Contained Files`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/592924f9-deec-45fa-afd0-05f19dfe6bf4" />
+</p>
