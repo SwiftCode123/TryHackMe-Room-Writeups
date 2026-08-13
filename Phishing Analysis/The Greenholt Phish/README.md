@@ -30,7 +30,7 @@ A sales executive at Greenholt PLC has reported a suspicious email received from
 ## Solution
 ### What is the Transfer Reference Number listed in the email's Subject line?
 
-- I first opened the email and read all the content in it. Seemed like the email is saying some type of transfer of funds had been made to `webmaster@redacted.org` by ` Mr. James Jackson (info@mutawamarine.com)` and all other details are present in the email including the reference number, status, money sent and so on
+- I first opened the email and read all the content in it. Seemed like the email is saying some type of transfer of funds had been made to `webmaster@redacted.org` by `Mr. James Jackson (info@mutawamarine.com)` and all other details are present in the email including the reference number, status, money sent and so on
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/50e69a46-f0bd-402a-87fc-362798c270f7" />
 </p>
