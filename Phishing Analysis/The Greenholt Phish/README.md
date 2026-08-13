@@ -2,7 +2,7 @@
 <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" width="150" alt="TryHackMe Logo">
 </p>
 
-# Summit
+# The Greenholt Phish
 |  Room Name | The Greenholt Phish |
 |----------|-------|
 | Author | Dhruv Tripathi |
