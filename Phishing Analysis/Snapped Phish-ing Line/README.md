@@ -108,3 +108,51 @@ As a member of the IT department at SwiftSpend Financial, you are responsible fo
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/592924f9-deec-45fa-afd0-05f19dfe6bf4" />
 </p>
+
+- Answer: `49`
+
+### Let’s see if the attacker has exposed any captured credentials. Navigate to the `/data/Update365/` directory and investigate the log file. What is the email address of the user who submitted their credentials more than once?
+
+- I clicked on the `Updates 365/` link and then the `log.txt` link
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0b414925-6c72-4362-b738-4aef1f4c7d47" />
+</p>
+
+- We can see the person's email address who submitted his credential twice
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5938e9c6-1f0d-4f2b-b0c0-08e6f97da45f" />
+</p>
+
+- Answer: `michael.ascot@swiftspend.finance`
+
+### Extract the phishing kit archive and locate the `submit.php` file. What email address is used by the adversary to collect compromised credentials?
+- I unzipped the archive via `unzip Update365.zip`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/2bb577fe-fd34-42ff-a2f1-714b585d8f54" />
+</p>
+
+- I arrived at the correct directory and located the `submit.php` file
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/4f08f439-411c-4baf-ba2a-e472f661b226" />
+</p>
+
+- We can see after the user enters in their credentials, that information is sent to the attacker's email next to `$send`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/de9dedfd-f759-4781-aab3-31a1415426b3" />
+</p>
+
+- Answer: `m3npat@yandex.com`
+
+### Return to the phishing URL and locate the flag.txt file. Using CyberChef (opens in new tab) to decode the flag, what is the secret value?
+- I typed in `flag.txt` after `/office365` and we get a base64 encoded string
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/70ddfeef-e370-40cf-9010-a0765eeb45c9" />
+</p>
+
+- I copied the base64 string and pasted it into CyberChef. Initially, I got the flag but it was reversed (`}LRU_3Ht_hT1w_y4Lp{MHT`) so I had to use a reverse step to flip the flag around 
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/28f18afa-fac2-4488-b5c1-97f9136f4ec5" />
+</p>
+
+- Answer: `THM{pL4y_w1Th_tH3_URL}`
