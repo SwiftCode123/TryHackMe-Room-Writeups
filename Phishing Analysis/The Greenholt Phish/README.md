@@ -120,7 +120,7 @@ A sales executive at Greenholt PLC has reported a suspicious email received from
 - Answer: `SWT_#09674321____PDF__.CAB`
 
 ### Download the attachment to your virtual environment. Using the `sha256sum` command, what is the `SHA256` hash of the file?
-- I first downloaded the attachment by clicking the `Save` button in the right corner
+- I first downloaded the attachment by clicking the `Save` button in the bottom right corner
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/b3862e98-561f-41bf-81a3-9c8bd815e59a" />
 </p>
