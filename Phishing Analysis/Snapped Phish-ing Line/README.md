@@ -15,7 +15,7 @@ Tags: -
 Meta Tags: CTF, CTF Challenge, Capture The Flag
 Subscription type: Premium
 Description:
-Use the knowledge attained to analyze a malicious email.
+Apply learned skills to probe malicious emails and URLs, exposing a vast phishing campaign.
 ```
 
 ## Scenario
