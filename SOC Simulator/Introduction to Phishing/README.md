@@ -6,6 +6,7 @@
 | SOC Simulation Name | Introduction to Phishing |
 |----------|-------|
 | Author | Dhruv Tripathi |
+| Difficulty | Beginner |
 
 ## Scenario Overview
 
