@@ -3,7 +3,7 @@
 </p>
 
 # Introduction to Phishing
-| SOC Simulation | Introduction to Phishing |
+| SOC Simulation Name | Introduction to Phishing |
 |----------|-------|
 | Author | Dhruv Tripathi |
 
@@ -42,7 +42,7 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a3356a80-0476-413b-bc0c-2158aceda33a" />
 </p>
 
-- I looked through the company information and it seemed like this may come in handy later
+- I looked through the `Company Information` and it seemed like this may come in handy later
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/500351bb-8a15-4582-b835-ac21f2db71c0" />
 </p>
