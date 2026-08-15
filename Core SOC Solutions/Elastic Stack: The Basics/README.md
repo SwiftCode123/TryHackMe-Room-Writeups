@@ -184,6 +184,8 @@ Understand how SOC analysts use the Elastic Stack (ELK) for log investigations.
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5dbb3aba-1f52-45e1-9fd3-c55963b1c6c4" />
 </p>
 
+- Answer: `No answer needed`
+
 ## Skills Learned
 
 * Understood the core components of the Elastic Stack and the roles of Elasticsearch, Logstash, and Kibana in log collection, processing, storage, and visualization
