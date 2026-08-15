@@ -138,15 +138,31 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ff5d3124-23be-4440-bcc9-87f4f7775b77" />
 </p>
 
+- I even did a reputation check on the sender address `onboarding@hrconnex.thm` and it was also clean
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/fad76ec4-4425-47a2-a776-ab93d051a58f" />
+</p>
+
 - I went into the SIEM and typed in my query to find the specific log
 ```
 * datasource=email sender=onboarding@hrconnex.thm
 ```
-Note that I got his IP address from the `Company Information` documentation
 
 - Now, out of these two logs, the `timestamp` in the alert detail matches the second one and so I investigated that one
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/de543740-e152-4e88-8021-cdbba3b8e407" />
 </p>
 
-- It seemed like there was nothing malicious happening here as we also confirmed this with the reputation check that this link was not malicious. Based on the analysis, the email appears to be legitimate and was likely sent to assist the user with setting up their profile
+- It seemed like there was nothing malicious happening here as we also confirmed this with the reputation check that this link and sender address was not malicious. Based on the analysis, the email appears to be legitimate and was likely sent to assist the user with setting up their profile
+
+- I wrote the report here and proceeded to mark this as a false positive as this was a legitimiate email
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/fe2c526a-51d2-4bfa-9069-73756edaad38" />
+</p>
+
+### Report #2
+> his activity is classified as a False Positive. The email was sent to Julia Garcia from j.garcia@thetrydaily.thm with the subject “Action Required: Finalize Your Onboarding Profile.” The email originated from onboarding@hrconnex.thm and contained a link to hrconnex.thm/onboarding/15400654060/j.garcia, which is consistent with an onboarding and profile setup process.
+
+> The alert was triggered because the inbound email contained an external link. However, there were no attachments or other indicators of malicious content identified in the email, and the link is consistent with the stated HR onboarding purpose. No evidence of malicious activity or compromise was identified during the investigation.
+
+> No escalation is required. Recommended remediation is to close the alert as a False Positive and continue monitoring for any related suspicious email or activity. The relevant indicators are the sender onboarding@hrconnex.thm, recipient j.garcia@thetrydaily.thm, and the URL https://hrconnex.thm/onboarding/15400654060/j.garcia.
