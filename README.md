@@ -8,8 +8,7 @@ Profile: [https://tryhackme.com/](https://tryhackme.com/p/dhruv.tr03)
 
 This repository contains all my public TryHackMe write-ups, including walkthroughs, CTF challenge solutions and SOC Simulations. I aim to keep each write-up well-formatted, structured, and easy to follow
 
-> **Note:** Rooms marked with the 🚩 icon are CTF-style challenges rather than standard walkthroughs
----
+> Note: Rooms marked with the 🚩 icon are CTF-style challenges, while rooms marked with the 🔮 icon are SOC Simulations 🌐
 
 ## Content
 
