@@ -238,6 +238,11 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 > The relevant indicators are sender no-reply@m1crosoftsupport.co, recipient c.allen@thetrydaily.thm, workstation win-3463, source IP 10.20.2.25, destination IP 45.148.10.131, destination port 443, and URL https://m1crosoftsupport.co/login.
 
 - I finally completed the simulation and all TP and FP's were identified correctly. Obviously the AI grader had some improvements for me as to make my reports better and I reviewed the feedback to make it stronger next time I do a simulation. Overall, I had fun with this simulation :D
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e9720892-4556-4d87-b99c-05dcb23ccf93" />
+</p>
+
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/4a6ef20b-90a4-4906-ab51-05c904c73460" />
 </p>
