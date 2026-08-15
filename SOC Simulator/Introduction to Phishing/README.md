@@ -166,3 +166,36 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 > The alert was triggered because the inbound email contained an external link. However, there were no attachments or other indicators of malicious content identified in the email, and the link is consistent with the stated HR onboarding purpose. No evidence of malicious activity or compromise was identified during the investigation.
 
 > No escalation is required. Recommended remediation is to close the alert as a False Positive and continue monitoring for any related suspicious email or activity. The relevant indicators are the sender onboarding@hrconnex.thm, recipient j.garcia@thetrydaily.thm, and the URL https://hrconnex.thm/onboarding/15400654060/j.garcia.
+
+- I now moved onto the next alert. Now this alert was similar to the last one as the user received an email with a link which as flagged but this one seemed a bit suspicious with the sender address and the link 
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3af81d55-425b-4d92-9898-0f7d3fd2e856" />
+</p>
+
+- I did a reputation on the link and it flagged it as malicious
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1cdc2708-41ec-4f03-94bc-70be77db1f36" />
+</p>
+
+- I searched in Splunk for this log and it seems like the user did in fact receive an email with from what seems like it is "Amazon" per se but with a malicious link
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/2edf609b-b879-43d1-9e1d-ae6f2d4ad7e6" />
+</p>
+
+- I then checked to see if the user did in fact click the link and we can see they did as the IP address `10.20.2.17` is associated with `h.harris@thetrydaily.thm` but the connection was blocked. We now know that alerts `8815` and `8816` are related to one another where `8815` is the receiving the email and `8816` was the firewall logs where the user did click on the malicious link 
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/7f961a19-a697-4414-9529-674c0c0855af" />
+</p>
+
+- I marked it as a true positive but no escalation required because while this was a phishing email, the firewall blocked the connection
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3af8b849-afaa-4e83-a561-5b7c89f7d57b" />
+</p>
+
+### Report #3
+> This activity is classified as a True Positive. The email was sent to Hannah Harris from urgents@amazon.biz with the subject “Your Amazon Package Couldn’t Be Delivered – Action Required” and contained a shortened bit.ly link requesting the recipient to confirm shipping information. The use of an urgent delivery message, external shortened URL, and suspicious sender domain are consistent with phishing activity.
+
+> The URL in the email was identified as suspicious and the associated connection was blocked by the firewall, preventing access to the destination. No evidence of successful communication or compromise was identified, so the alert does not require escalation.
+
+> Recommended remediation is to remove or quarantine the phishing email, ensure the URL remains blocked, and monitor the affected workstation for any further attempts to access suspicious links. The relevant indicators are the sender urgents@amazon.biz, recipient h.harris@thetrydaily.thm, and URL http://bit.ly/3sHkX3da12340.
