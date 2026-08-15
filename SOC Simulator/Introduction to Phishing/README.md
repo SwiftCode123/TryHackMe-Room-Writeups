@@ -215,7 +215,7 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/500bea32-b49a-42c2-a3cf-602d4ce5269c" />
 </p>
 
-- Now, I wanted to check if the user had clicked the link and it seemed like there was an allow connection from the firewall. We know now that the user did click on the link and unlike last time the connection wasn't blocked. We know this since the IP address `10.20.2.25` corresponds with the email `c.allen@thetrydaily.thm` which I got from the `Company Information` under `Documentation`. `Since this was a login page, it was completely possible that the user entered their credentials. This required immediate escalation
+- Now, I wanted to check if the user had clicked the link and it seemed like there was an allow connection from the firewall. We know now that the user did click on the link and unlike last time the connection wasn't blocked. We know this since the IP address `10.20.2.25` corresponds with the email `c.allen@thetrydaily.thm` which I got from the `Company Information` under `Documentation`. Since this was a login page, it was completely possible that the user entered their credentials. This required immediate escalation
 ```
 * datasource=firewall SourceIP=10.20.2.25 URL=https://m1crosoftsupport.co/login
 ```
