@@ -52,3 +52,55 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8e792784-9f3a-40ae-935b-6551972e5875" />
 </p>
+
+- I went to the `Alert Queue` and picked the highest severity one first
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/13be1fbb-cb9d-4c91-8711-e97d7de2d43e" />
+</p>
+
+- I clicked the action button on the right of the alert to take ownership of this alert
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a79e3f96-c2df-403e-a22c-5d8a4a4887c6" />
+</p>
+
+- Then I started to read the alert description. At this moment from what I understand, a user or device tried to access a URL that was blacklisted by the organization. It happened on `08/14/2026` at `23:52:29.036`. It was `blocked` and we can see the `SourceIP` and the `SourcePort` as well as the `DestinationIP` and `DestinationPort`. That URL does look a bit suspicious but we can't assume anything yet
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/72fb3a39-aaeb-46aa-a0ad-14123a58d317" />
+</p>
+
+- Before opening the SIEM, I was curious who that IP address belonged to in the `Company Information` we saw earlier and it was someone from HR named `Hannah Harris`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/6bf9da45-2c9e-4cd3-adbd-17f0630e8e92" />
+</p>
+
+- I opened the SIEM and typed the query and we can see the exact log and we know its this log because all of the information such as `timestamp` match as well
+```
+* datasource="firewall" SourceIP="10.20.2.17"
+```
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a9498bf1-1d92-450f-a21b-c76f737bd8b6" />
+</p>
+
+- Dissecting the log further, it seemed like the connection was blocked fortunately to the destination IP/URL so there is not much to worry here
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e6076cf1-bd79-42db-b24d-de35fef7206b" />
+</p>
+
+- After looking at the SIEM, I went back and clicked the `Analyst VM`
+<p align="center">
+
+</p>
+
+- I went back to the dashboard and clicked on `Write case report`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/98ce0f67-97cd-44e5-87f0-ef4966194f83" />
+</p>
+
+- I said this was a `False Positive` because while the user may have clicked on the link or made a connection to that URL, the connection was blocked by what I assume is some security solution and no further harm was done
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/f66457ec-1d2a-4f92-89ca-ba27a8683d80" />
+</p>
+
+- 
