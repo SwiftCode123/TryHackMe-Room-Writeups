@@ -198,7 +198,7 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 - Now I moved onto the next alert which was also another flagged email. This one contained a suspicious link and was overall more obviously suspicious because as we know the domain after the `@` symbol is clearly misspelled and trying to impersonate `Microsoft`
 
 <p align="center">
-<img width="1512" height="859" alt="image" src="https://github.com/user-attachments/assets/b9a96cdc-5863-43f7-a3d7-61d04b2754ba" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/b9a96cdc-5863-43f7-a3d7-61d04b2754ba" />
 </p>
 
 - I did a reputation check on the link and it was flagged as malicious
