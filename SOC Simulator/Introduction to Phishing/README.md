@@ -185,15 +185,15 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 
 - I marked it as a true positive but no escalation required because while this was a phishing email, the firewall blocked the connection
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3af8b849-afaa-4e83-a561-5b7c89f7d57b" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/144cced3-0e15-458a-8c10-70a994d8ac18" />
 </p>
 
 ### Report #3
-> This activity is classified as a True Positive. The email was sent to Hannah Harris from urgents@amazon.biz with the subject “Your Amazon Package Couldn’t Be Delivered – Action Required” and contained a shortened bit.ly link requesting the recipient to confirm shipping information. The use of an urgent delivery message, external shortened URL, and suspicious sender domain are consistent with phishing activity.
+> This activity is classified as a True Positive. The email was sent to Hannah Harris from [urgents@amazon.biz](mailto:urgents@amazon.biz) with the subject “Your Amazon Package Couldn’t Be Delivered – Action Required” and contained a shortened bit.ly link requesting the recipient to confirm shipping information. The urgent delivery message, suspicious sender domain, and shortened external URL are consistent with phishing activity.
 
-> The URL in the email was identified as suspicious and the associated connection was blocked by the firewall, preventing access to the destination. No evidence of successful communication or compromise was identified, so the alert does not require escalation.
+> The URL in the email was identified as suspicious, and the associated connection was blocked by the firewall, preventing access to the destination. No evidence of successful communication or compromise was identified, so the alert does not require escalation.
 
-> Recommended remediation is to remove or quarantine the phishing email, ensure the URL remains blocked, and monitor the affected workstation for any further attempts to access suspicious links. The relevant indicators are the sender urgents@amazon.biz, recipient h.harris@thetrydaily.thm, and URL http://bit.ly/3sHkX3da12340.
+> Recommended remediation is to remove or quarantine the phishing email, ensure the URL remains blocked, and monitor Hannah Harris's workstation, win-3457 (10.20.2.17), for any further attempts to access suspicious links. The relevant indicators are the sender [urgents@amazon.biz](mailto:urgents@amazon.biz), recipient [h.harris@thetrydaily.thm](mailto:h.harris@thetrydaily.thm), URL http://bit.ly/3sHkX3da12340, and destination IP 67.199.248.11.
 
 - Now I moved onto the next alert which was also another flagged email. This one contained a suspicious link and was overall more obviously suspicious because as we know the domain after the `@` symbol is clearly misspelled and trying to impersonate `Microsoft`
 
