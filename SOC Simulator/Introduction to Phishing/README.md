@@ -74,7 +74,17 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/6bf9da45-2c9e-4cd3-adbd-17f0630e8e92" />
 </p>
 
-- I opened the SIEM and typed the query and we can see the exact log and we know its this log because all of the information such as `timestamp` match as well
+- After looking at the SIEM, I went back and clicked the `Analyst VM`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/11e0902c-4550-437c-be21-494d8a55ab22" />
+</p>
+
+- Then, I did a reputation check of the URL and we can see it was marked as `MALICIOUS`. I digged in deeper using the SIEM
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/49e8d46b-1440-4b6f-881a-5640e22838fa" />
+</p>
+
+- Now, I opened the SIEM and typed the query and we can see the exact log and we know its this log because all of the information such as `timestamp` match as well
 ```
 * datasource="firewall" SourceIP="10.20.2.17"
 ```
@@ -87,20 +97,18 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e6076cf1-bd79-42db-b24d-de35fef7206b" />
 </p>
 
-- After looking at the SIEM, I went back and clicked the `Analyst VM`
-<p align="center">
-
-</p>
-
 - I went back to the dashboard and clicked on `Write case report`
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/98ce0f67-97cd-44e5-87f0-ef4966194f83" />
 </p>
 
-- I said this was a `False Positive` because while the user may have clicked on the link or made a connection to that URL, the connection was blocked by what I assume is some security solution and no further harm was done
+- I said this was a `False Positive` because while the user may have clicked on the link or made a connection to that URL, the connection was blocked by what I assume is some security solution and no further harm was done so this is likely a false positive
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/f66457ec-1d2a-4f92-89ca-ba27a8683d80" />
 </p>
 
-- 
+- I wrote my report according to the best practices in the documentation we read earlier and included all the relevant information. I then closed the alert. This was one alert done!
+<p align="center">
+<img width="1512" height="863" alt="image" src="https://github.com/user-attachments/assets/1b8c65d9-c3ad-43f8-9518-2b93f8e7e388" />
+</p>
