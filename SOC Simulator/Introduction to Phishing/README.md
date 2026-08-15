@@ -234,7 +234,7 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 
 > The relevant indicators are no-reply@m1crosoftsupport.co, c.allen@thetrydaily.thm, win-3463, 10.20.2.25, m1crosoftsupport.co, https://m1crosoftsupport.co/login, and 102.89.222.143.
 
-- I finally completed the simulation and all TP and FP's were identified correctly
+- I finally completed the simulation and all TP and FP's were identified correctly. Obviously the AI grader had some improvements for me as to make my reports better and I reviewed the feedback to make it stronger next time I do a simulation. Overall, I had fun with this simulation :D
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/4a6ef20b-90a4-4906-ab51-05c904c73460" />
 </p>
