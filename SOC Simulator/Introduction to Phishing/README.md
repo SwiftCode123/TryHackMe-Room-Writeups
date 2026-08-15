@@ -155,7 +155,7 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 
 - It seemed like there was nothing malicious happening here as we also confirmed this with the reputation check that this link and sender address were not malicious and there is no malicious indication either. Based on the analysis, the email appears to be legitimate and was likely sent to assist the user with setting up their profile
 
-- I wrote the report here and proceeded to mark this as a false positive as this was a legitimiate email
+- I wrote the report here and proceeded to mark this as a false positive as this was a legitimate email
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/fe2c526a-51d2-4bfa-9069-73756edaad38" />
 </p>
