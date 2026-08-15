@@ -216,23 +216,26 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 </p>
 
 - Now, I wanted to check if the user had clicked the link and it seemed like there was an allow connection from the firewall. We know now that the user did click on the link and unlike last time the connection wasn't blocked. We know this since the IP address `10.20.2.25` corresponds with the email `c.allen@thetrydaily.thm` which I got from the `Company Information` under `Documentation`. `Since this was a login page, it was completely possible that the user entered their credentials. This required immediate escalation
+```
+* datasource=firewall SourceIP=10.20.2.25 URL=https://m1crosoftsupport.co/login
+```
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/269f6764-263b-4a85-86d0-5e6c3b574bd4" />
 </p>
 
 - I checked it as true positive, wrote the report and escalated the alert
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8f7c748c-ee54-46ab-acf4-d5341cd0794f" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e84e307e-e413-4800-912b-114be92858b6" />
 </p>
 
 ### Report #4
-> This activity is classified as a True Positive. The phishing email was sent to Charlotte Allen from no-reply@m1crosoftsupport.co with the subject “Unusual Sign-In Activity on Your Microsoft Account.” Charlotte is a Web Development employee using workstation win-3463 with IP address 10.20.2.25. The email impersonates Microsoft, uses the lookalike domain m1crosoftsupport.co, and directs the recipient to a suspicious login page.
+> This activity is classified as a True Positive. The email was sent to Charlotte Allen from no-reply@m1crosoftsupport.co with the subject “Unusual Sign-In Activity on Your Microsoft Account.” Charlotte is a Web Development employee using workstation win-3463 with IP address 10.20.2.25. The email impersonates Microsoft and directs the recipient to the suspicious URL https://m1crosoftsupport.co/login.
 
-> The alert requires escalation because firewall logs show that the connection to the suspicious destination was allowed. This indicates that Charlotte's workstation was able to communicate with the malicious URL, creating a potential risk of credential theft or further compromise. The activity should therefore be investigated to determine whether the user accessed the page or submitted any credentials.
+> The alert requires escalation because firewall logs confirmed that Charlotte's workstation successfully accessed the suspicious URL. The connection was allowed to destination IP 45.148.10.131 over TCP port 443 under the Allow-Internet rule. This indicates that the phishing link was not blocked and the workstation communicated with the suspicious destination, creating a potential risk of credential theft or further compromise.
 
-> Recommended remediation includes blocking the malicious domain and URL, reviewing activity from win-3463 (10.20.2.25), and checking for any additional connections to the suspicious infrastructure. The phishing email should also be removed or quarantined. If credentials were submitted, Charlotte's account should be secured and her password reset.
+> Recommended remediation is to block the malicious domain and destination IP, remove or quarantine the phishing email, and investigate workstation win-3463 for any additional connections or signs of compromise. Charlotte's account should also be reviewed for suspicious activity and secured if there is evidence that credentials were submitted.
 
-> The relevant indicators are no-reply@m1crosoftsupport.co, c.allen@thetrydaily.thm, win-3463, 10.20.2.25, m1crosoftsupport.co, https://m1crosoftsupport.co/login, and 102.89.222.143.
+> The relevant indicators are sender no-reply@m1crosoftsupport.co, recipient c.allen@thetrydaily.thm, workstation win-3463, source IP 10.20.2.25, destination IP 45.148.10.131, destination port 443, and URL https://m1crosoftsupport.co/login.
 
 - I finally completed the simulation and all TP and FP's were identified correctly. Obviously the AI grader had some improvements for me as to make my reports better and I reviewed the feedback to make it stronger next time I do a simulation. Overall, I had fun with this simulation :D
 <p align="center">
