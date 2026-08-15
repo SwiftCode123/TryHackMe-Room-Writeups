@@ -138,11 +138,6 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ff5d3124-23be-4440-bcc9-87f4f7775b77" />
 </p>
 
-- I even did a reputation check on the sender address `onboarding@hrconnex.thm` and it was also clean
-<p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/fad76ec4-4425-47a2-a776-ab93d051a58f" />
-</p>
-
 - I went into the SIEM and typed in my query to find the specific log
 ```
 * datasource=email sender=onboarding@hrconnex.thm
@@ -153,7 +148,7 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/de543740-e152-4e88-8021-cdbba3b8e407" />
 </p>
 
-- It seemed like there was nothing malicious happening here as we also confirmed this with the reputation check that this link and sender address were not malicious and there is no malicious indication either. Based on the analysis, the email appears to be legitimate and was likely sent to assist the user with setting up their profile
+- It seemed like there was nothing malicious happening here as we also confirmed this with the reputation check that this link was not malicious and there is no malicious indication anywhere. Based on the analysis, the email appears to be legitimate and was likely sent to assist the user with setting up their profile
 
 - I wrote the report here and proceeded to mark this as a false positive as this was a legitimate email
 <p align="center">
@@ -199,3 +194,42 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 > The URL in the email was identified as suspicious and the associated connection was blocked by the firewall, preventing access to the destination. No evidence of successful communication or compromise was identified, so the alert does not require escalation.
 
 > Recommended remediation is to remove or quarantine the phishing email, ensure the URL remains blocked, and monitor the affected workstation for any further attempts to access suspicious links. The relevant indicators are the sender urgents@amazon.biz, recipient h.harris@thetrydaily.thm, and URL http://bit.ly/3sHkX3da12340.
+
+- Now I moved onto the next alert which was also another flagged email. This one contained a suspicious link and was overall more obviously suspicious because as we know the domain after the `@` symbol is clearly misspelled and trying to impersonate `Microsoft`
+
+<p align="center">
+<img width="1512" height="859" alt="image" src="https://github.com/user-attachments/assets/b9a96cdc-5863-43f7-a3d7-61d04b2754ba" />
+</p>
+
+- I did a reputation check on the link and it was flagged as malicious
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5f88d226-5b94-4745-b1a7-6a044fa19158" />
+</p>
+
+- We can clearly see this log in the SIEM as there was indeed a inbound email
+```
+* datasource=email sender=no-reply@m1crosoftsupport.co
+```
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/500bea32-b49a-42c2-a3cf-602d4ce5269c" />
+</p>
+
+- Now, I wanted to check if the user had clicked the link and it seemed like there was an allow connection from the firewall. We know now that the user did click on the link and unlike last time the connection wasn't blocked. We know this since the IP address `10.20.2.25` corresponds with the email `c.allen@thetrydaily.thm` which I got from the `Company Information` under `Documentation`. `Since this was a login page, it was completely possible that the user entered their credentials. This required immediate escalation
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/269f6764-263b-4a85-86d0-5e6c3b574bd4" />
+</p>
+
+- I checked it as true positive, wrote the report and escalated the alert
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8f7c748c-ee54-46ab-acf4-d5341cd0794f" />
+</p>
+
+#### Report #4
+> This activity is classified as a True Positive. The phishing email was sent to Charlotte Allen from no-reply@m1crosoftsupport.co with the subject “Unusual Sign-In Activity on Your Microsoft Account.” Charlotte is a Web Development employee using workstation win-3463 with IP address 10.20.2.25. The email impersonates Microsoft, uses the lookalike domain m1crosoftsupport.co, and directs the recipient to a suspicious login page.
+
+> The alert requires escalation because firewall logs show that the connection to the suspicious destination was allowed. This indicates that Charlotte's workstation was able to communicate with the malicious URL, creating a potential risk of credential theft or further compromise. The activity should therefore be investigated to determine whether the user accessed the page or submitted any credentials.
+
+> Recommended remediation includes blocking the malicious domain and URL, reviewing activity from win-3463 (10.20.2.25), and checking for any additional connections to the suspicious infrastructure. The phishing email should also be removed or quarantined. If credentials were submitted, Charlotte's account should be secured and her password reset.
+
+> The relevant indicators are no-reply@m1crosoftsupport.co, c.allen@thetrydaily.thm, win-3463, 10.20.2.25, m1crosoftsupport.co, https://m1crosoftsupport.co/login, and 102.89.222.143.
