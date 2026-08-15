@@ -167,7 +167,7 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 
 > No escalation is required. Recommended remediation is to close the alert as a False Positive and continue monitoring for any related suspicious email or activity. The relevant indicators are the sender onboarding@hrconnex.thm, recipient j.garcia@thetrydaily.thm, and the URL https://hrconnex.thm/onboarding/15400654060/j.garcia.
 
-- I now moved onto the next alert. Now this alert was similar to the last one as the user received an email with a link which as flagged but this one seemed a bit suspicious with the sender address and the link 
+- I now moved onto the next alert. Now this alert was similar to the last one as the user received an email with a link which sas flagged but this one seemed a bit suspicious with the sender address and the link 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3af81d55-425b-4d92-9898-0f7d3fd2e856" />
 </p>
