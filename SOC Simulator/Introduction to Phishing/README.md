@@ -225,7 +225,7 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8f7c748c-ee54-46ab-acf4-d5341cd0794f" />
 </p>
 
-#### Report #4
+### Report #4
 > This activity is classified as a True Positive. The phishing email was sent to Charlotte Allen from no-reply@m1crosoftsupport.co with the subject “Unusual Sign-In Activity on Your Microsoft Account.” Charlotte is a Web Development employee using workstation win-3463 with IP address 10.20.2.25. The email impersonates Microsoft, uses the lookalike domain m1crosoftsupport.co, and directs the recipient to a suspicious login page.
 
 > The alert requires escalation because firewall logs show that the connection to the suspicious destination was allowed. This indicates that Charlotte's workstation was able to communicate with the malicious URL, creating a potential risk of credential theft or further compromise. The activity should therefore be investigated to determine whether the user accessed the page or submitted any credentials.
