@@ -233,3 +233,8 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 > Recommended remediation includes blocking the malicious domain and URL, reviewing activity from win-3463 (10.20.2.25), and checking for any additional connections to the suspicious infrastructure. The phishing email should also be removed or quarantined. If credentials were submitted, Charlotte's account should be secured and her password reset.
 
 > The relevant indicators are no-reply@m1crosoftsupport.co, c.allen@thetrydaily.thm, win-3463, 10.20.2.25, m1crosoftsupport.co, https://m1crosoftsupport.co/login, and 102.89.222.143.
+
+- I finally completed the simulation and all TP and FP's were identified correctly
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/4a6ef20b-90a4-4906-ab51-05c904c73460" />
+</p>
