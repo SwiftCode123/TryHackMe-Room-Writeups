@@ -161,7 +161,7 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 </p>
 
 ### Report #2
-> his activity is classified as a False Positive. The email was sent to Julia Garcia from j.garcia@thetrydaily.thm with the subject “Action Required: Finalize Your Onboarding Profile.” The email originated from onboarding@hrconnex.thm and contained a link to hrconnex.thm/onboarding/15400654060/j.garcia, which is consistent with an onboarding and profile setup process.
+> This activity is classified as a False Positive. The email was sent to Julia Garcia from j.garcia@thetrydaily.thm with the subject “Action Required: Finalize Your Onboarding Profile.” The email originated from onboarding@hrconnex.thm and contained a link to hrconnex.thm/onboarding/15400654060/j.garcia, which is consistent with an onboarding and profile setup process.
 
 > The alert was triggered because the inbound email contained an external link. However, there were no attachments or other indicators of malicious content identified in the email, and the link is consistent with the stated HR onboarding purpose. No evidence of malicious activity or compromise was identified during the investigation.
 
