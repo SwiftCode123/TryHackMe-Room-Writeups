@@ -51,4 +51,4 @@ This repository contains all my public TryHackMe write-ups, including walkthroug
     - [Snapped Phish-ing Line (CTF Challenge 🚩)](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Phishing%20Analysis/Snapped%20Phish-ing%20Line/README.md)
 
 ### SOC Simulator
-  - 🚧 _New Writeup Coming Soon_ 🚧
+  - [Introduction To Phishing (SOC Simulator 🌐)](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/SOC%20Simulator/Introduction%20to%20Phishing/README.md)
