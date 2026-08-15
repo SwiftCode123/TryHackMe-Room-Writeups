@@ -86,13 +86,13 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 
 - Now, I opened the SIEM and typed the query and we can see the exact log and we know its this log because all of the information such as `timestamp` match as well
 ```
-* datasource="firewall" SourceIP="10.20.2.17"
+* datasource=firewall SourceIP=10.20.2.17
 ```
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a9498bf1-1d92-450f-a21b-c76f737bd8b6" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8da67c5d-48e7-408b-8f9f-0b862dbfcd84" />
 </p>
 
-- Dissecting the log further, it seemed like the connection was blocked fortunately to the destination IP/URL so there is not much to worry here
+- Dissecting the log further, it seemed like the connection was blocked fortunately to the destination IP/URL
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e6076cf1-bd79-42db-b24d-de35fef7206b" />
 </p>
@@ -102,20 +102,51 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/98ce0f67-97cd-44e5-87f0-ef4966194f83" />
 </p>
 
-- I said this was a `False Positive` because while the user may have clicked on the link or made a connection to that URL, the connection was blocked by what I assume is some security solution and no further harm was done so this is likely a false positive
+- I classified this as a `True Positive` because the user attempted to access a URL identified as malicious or blacklisted by the organization's security controls. Although the firewall successfully blocked the connection and prevented further harm, the malicious activity itself was genuine
 
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/f66457ec-1d2a-4f92-89ca-ba27a8683d80" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/890bbecf-0b0e-42e8-8d93-0bc3080cc87b" />
 </p>
 
-- I wrote my report according to the best practices in the documentation we read earlier and included all the relevant information. I then closed the alert. This was one alert done!
+- I wrote my report according to the best practices in the documentation we read earlier and included all the relevant information. There was no escalation required for this as the firewall blocked the connection and no sensitive information or any malware was present from what we saw. I then closed the alert. This was one alert done!
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1b8c65d9-c3ad-43f8-9518-2b93f8e7e388" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/60ace5b6-69c9-402e-ba5f-06d4caa0384d" />
 </p>
 
 ### Report #1 
-> This activity is classified as a False Positive. The activity involved Hannah Harris from the Human Resources department, using workstation win-3457 with IP address 10.20.2.17. At 19:15 on August 14, 2026, the workstation attempted to access the external URL http://bit.ly/3sHkX3da12340, communicating with destination IP 67.199.248.11 over TCP port 80.
+> This activity is classified as a True Positive. The activity involved Hannah Harris from the Human Resources department, using workstation win-3457 with IP address 10.20.2.17. At 19:15 on August 14, 2026, the workstation attempted to access the blacklisted external URL http://bit.ly/3sHkX3da12340, communicating with destination IP 67.199.248.11 over TCP port 80.
 
-> During the investigation, it was confirmed that the firewall successfully blocked the outbound connection under the Blocked Websites rule. The request was therefore prevented from reaching the external destination, and there is no evidence from this event of successful communication or compromise. The alert was triggered by the attempted access to a blacklisted URL, but the security control functioned as intended.
+> The activity is considered a True Positive because the requested URL was identified as a blacklisted destination by the organization's security controls. The firewall detected the request and successfully blocked the outbound connection under the Blocked Websites rule, preventing the workstation from reaching the destination.
 
-> No escalation is required at this time. The relevant indicators are the source IP 10.20.2.17, source port 34257, destination IP 67.199.248.11, destination port 80, and the requested bit.ly URL. The workstation can be monitored for any repeated attempts to access blacklisted or suspicious destinations.
+> No escalation is required at this time, as the connection was successfully blocked and there is no evidence of successful communication or compromise. Recommended remediation includes monitoring workstation win-3457 for any repeated attempts to access blacklisted or suspicious URLs and reviewing the user's activity if similar alerts occur. The relevant indicators are source IP 10.20.2.17, source port 34257, destination IP 67.199.248.11, destination port 80, and the requested bit.ly URL.
+
+- I then moved onto the next alert. I picked the alert with ID `8814` and took ownership of it by clicking the action button on the right side
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a1cdaa29-03f7-4c9b-9d03-4ec944449267" />
+</p>
+
+- I read the alert details and it seemed like at first glance that the user received an email containing a URL
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/7f5c74a5-1469-4f9b-99fc-9a4a283f0599" />
+</p>
+
+- I first copied the URL and did a reputation check on it and the the status was clean so this was a bit of a relief
+```https://hrconnex.thm/onboarding/15400654060/j.garcia```
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ff5d3124-23be-4440-bcc9-87f4f7775b77" />
+</p>
+
+- I went into the SIEM and typed in my query to find the specific log
+```
+* datasource=email sender=onboarding@hrconnex.thm
+```
+Note that I got his IP address from the `Company Information` documentation
+
+- Now, out of these two logs, the `timestamp` in the alert detail matches the second one and so I investigated that one
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/de543740-e152-4e88-8021-cdbba3b8e407" />
+</p>
+
+- It seemed like there was nothing malicious happening here as we also confirmed this with the reputation check that this link was not malicious. Based on the analysis, the email appears to be legitimate and was likely sent to assist the user with setting up their profile
