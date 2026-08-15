@@ -108,7 +108,7 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/890bbecf-0b0e-42e8-8d93-0bc3080cc87b" />
 </p>
 
-- I wrote my report according to the best practices in the documentation we read earlier and included all the relevant information. There was no escalation required for this as the firewall blocked the connection and no sensitive information or any malware was present from what we saw. I then closed the alert. This was one alert done!
+- I wrote my report according to the best practices in the documentation we read earlier and included all the relevant information. There was no escalation required for this as the firewall blocked the connection and no sensitive information was leaked or any malware was present from what we saw. I then closed the alert. This was one alert done!
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/60ace5b6-69c9-402e-ba5f-06d4caa0384d" />
 </p>
