@@ -110,5 +110,12 @@ NEW? START HERE! Learn how to use SOC Simulator by completing your first scenari
 
 - I wrote my report according to the best practices in the documentation we read earlier and included all the relevant information. I then closed the alert. This was one alert done!
 <p align="center">
-<img width="1512" height="863" alt="image" src="https://github.com/user-attachments/assets/1b8c65d9-c3ad-43f8-9518-2b93f8e7e388" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1b8c65d9-c3ad-43f8-9518-2b93f8e7e388" />
 </p>
+
+### Report #1 
+> This activity is classified as a False Positive. The activity involved Hannah Harris from the Human Resources department, using workstation win-3457 with IP address 10.20.2.17. At 19:15 on August 14, 2026, the workstation attempted to access the external URL http://bit.ly/3sHkX3da12340, communicating with destination IP 67.199.248.11 over TCP port 80.
+
+> During the investigation, it was confirmed that the firewall successfully blocked the outbound connection under the Blocked Websites rule. The request was therefore prevented from reaching the external destination, and there is no evidence from this event of successful communication or compromise. The alert was triggered by the attempted access to a blacklisted URL, but the security control functioned as intended.
+
+> No escalation is required at this time. The relevant indicators are the source IP 10.20.2.17, source port 34257, destination IP 67.199.248.11, destination port 80, and the requested bit.ly URL. The workstation can be monitored for any repeated attempts to access blacklisted or suspicious destinations.
