@@ -1,6 +1,6 @@
 # TryHackMe Certificates
 
-- Below are my TryHackMe Certificates of Completion. These are credentials generated instantly upon finishing specific learning paths to document my dedication to completing the coursework
+- Below are my TryHackMe Certificates of Completion. These are credentials generated instantly upon finishing specific learning paths or an event to document my dedication to completing the coursework
 
 ## Pre-Security
 
