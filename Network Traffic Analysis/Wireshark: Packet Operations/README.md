@@ -33,11 +33,11 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 
 - I clicked on `Statistics` and there was a dropdown. From that dropdown, I clicked on `Resolved Addresses` and to filter for hostnames starting with `bbc`, I typed `bbc` into the search area and we got the IP address. This way Wireshark shows the IP addresses found in the packet capture and their associated hostnames/DNS names
 
-- Answer: `199.232.24.81`
-
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d262bcd5-cd58-4873-9cc3-9c8998547be9" />
 </p>
+
+- Answer: `199.232.24.81`
 
 ### What is the number of IPv4 conversations?
 
