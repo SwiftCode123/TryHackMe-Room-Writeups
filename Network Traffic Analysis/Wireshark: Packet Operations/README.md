@@ -1,4 +1,4 @@
-<p align="center">
+<img width="1512" height="792" alt="image" src="https://github.com/user-attachments/assets/c8235796-d1b2-4b82-8188-1c3f0dcea01a" /><p align="center">
   <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" width="150" alt="TryHackMe Logo">
 </p>
 
@@ -82,3 +82,42 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 </p>
 
 - Answer: `188.246.82.7`
+
+## Task 3
+### What is the most used IPv4 destination address?
+
+- To view the most used `IPv4 destination address`, I went to `Statistics > IPv4 Statistics > Destinations and Ports`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ec8379df-2466-44b7-8975-8a7058752a4e" />
+</p>
+
+- I clicked on `Percent` at the top to filter by greatest to least as indicated by the up arrow
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3288be86-d123-4b5a-b0eb-af67b3a92ebe" />
+</p>
+
+- Answer: `10.100.1.33`
+
+### What is the max service request-response time of the DNS packets?
+
+- I went to `Statistics > DNS` and we can see the max service request-response time as indicated by the `Max val` on `Service Stats`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1ae919f3-2079-4419-ab3b-698db3c92857" />
+</p>
+
+- Answer: `0.467897`
+
+### What is the number of HTTP Requests accomplished by "rad[.]msn[.]com?
+
+- I found `rad.msn.com` but we needed the exact count and no it was not `18`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/deaf00ba-a08d-4b87-8fde-c3f7ecf051ef" />
+</p>
+
+- We can scroll to the right and see the actual number
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/36734726-8cb4-4d37-8366-e3f2de87a1e9" />
+</p>
+
+- Answer: `39`
