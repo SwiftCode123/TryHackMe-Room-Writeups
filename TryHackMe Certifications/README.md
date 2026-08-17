@@ -13,3 +13,9 @@
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e0321d96-d107-41ad-b0b8-cad1345bd84e" />
 </p>
+
+## Hackers Holiday Completion Certification
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/caff703d-047a-4ce6-8564-5581153e4ca2" />
+</p>
