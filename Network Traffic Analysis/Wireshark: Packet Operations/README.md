@@ -94,7 +94,7 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 
 - I clicked on `Percent` at the top to filter by greatest to least as indicated by the up arrow
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3288be86-d123-4b5a-b0eb-af67b3a92ebe" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9ed4c69c-b370-49e7-b875-e01327599c56" />
 </p>
 
 - Answer: `10.100.1.33`
