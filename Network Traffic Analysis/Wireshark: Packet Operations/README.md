@@ -62,6 +62,8 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/2fee10d4-718e-495e-9c6e-b80c2ceb349d" />
 </p>
 
+- Answer: `7474`
+
 ### What is the number of IP addresses linked with "Kansas City"?
 
 - I went to `Statistics` and then `Endpoints` and if we scroll down, we can see how many IP addresses are linked with `Kansas City`. Note that Wireshark can show us where an IP address is located geographically such as the country, city/region and ISP/Organization
