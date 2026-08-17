@@ -80,3 +80,5 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a586759f-1677-41be-bc5a-ee94ccb9c985" />
 </p>
+
+- Answer: `188.246.82.7`
