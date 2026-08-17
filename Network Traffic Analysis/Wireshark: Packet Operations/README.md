@@ -92,7 +92,7 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ec8379df-2466-44b7-8975-8a7058752a4e" />
 </p>
 
-- I clicked on `Percent` at the top to filter by greatest to least as indicated by the up arrow
+- I clicked on `Percent` at the top to filter by greatest to least as indicated by the up arrow and we can see the IP address at the top
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9ed4c69c-b370-49e7-b875-e01327599c56" />
 </p>
