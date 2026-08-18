@@ -165,7 +165,7 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 
 ### What is the number of type A DNS Queries?
 
-- This one was a bit tricky but the query was `dns.qry.type == 1` which gets all the `A` records, `dns.flags.response == 0` which gets the DNS queries as the question asked and then we have to filter out LLMNR queries as well because those can also be included DNS requests/responses via `!(llmnr)`
+- This one was a bit tricky but the query was `dns.qry.type == 1` which gets all the `A` records, `dns.flags.response == 0` which gets the DNS queries as the question asked and then we have to filter out LLMNR queries as well because those can also be included in DNS requests/responses via `!(llmnr)`
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/4e0ef4fe-1c60-4e8d-926e-b7840e156f22" />
 </p>
