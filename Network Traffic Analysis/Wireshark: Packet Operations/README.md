@@ -210,8 +210,20 @@ http.server contains "Microsoft-IIS" && http.server contains "7.5"
 
 - For this one, we can use a set of numbers as depicted by the curly braces
 ```
-tcp.port in {3333, 4444, 9999}
+tcp.port in {3333 4444 9999}
 ```
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9e877ee4-9640-45a3-8c6f-223f5011843d" />
 </p>
+
+- Answer: `2235`
+
+### What is the number of packets with "even TTL numbers"?
+
+- This one was the most tricky one as we first needed to get the TTL value which is network-level information via `ip.ttl` and then it required the conversion of the TTL field to strings via `string(ip.ttl)` and lastly match thsoe values in the set and the `$` just depicts the end of the set via `"[0 2 4 6 8]$"`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a41d37ab-e58b-4d9b-9b91-99de13708ac3" />
+</p>
+
+- Answer: `77289`
