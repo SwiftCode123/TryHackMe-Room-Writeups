@@ -195,7 +195,7 @@ http.server contains "Microsoft-IIS" && !(tcp.srcport == 80)
 
 ### Find all Microsoft IIS servers. What is the number of packets that have "version 7.5"?
 
-- The first part of this one was the same as the last one typing in `http.server contains "Microsoft-IIS"` and then `http.server contains "7.5"` to filter for the version number. Now, typing `http.server matches "7.5"` also works buy technically we don't need a regular expression here. If we were searching for versions `7.1, 7.2, etc.` the using `matches` would be the better option
+- The first part of this one was the same as the last one typing in `http.server contains "Microsoft-IIS"` and then `http.server contains "7.5"` to filter for the version number. Now, typing `http.server matches "7.5"` also works but technically we don't need a regular expression here. If we were searching for versions `7.1, 7.2, etc.` the using `matches` would be the better option
 ```
 http.server contains "Microsoft-IIS" && http.server contains "7.5"
 ```
