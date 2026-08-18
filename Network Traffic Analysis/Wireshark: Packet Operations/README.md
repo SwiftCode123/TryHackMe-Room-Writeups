@@ -184,7 +184,7 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 
 ### Find all Microsoft IIS servers. What is the number of packets that have "version 7.5"?
 
-- The first part of this one was the same as the last one typing in `http.server contains "Microsoft-IIS"` and then `http.server contains "7.5"` to filter for the version number
+- The first part of this one was the same as the last one typing in `http.server contains "Microsoft-IIS"` and then `http.server matches "7.5"` to filter for the version number. Typing `http.server contains "7.5"` also works since technically we don't need a regular expression here. If we were searching for versions `7.1, 7.2, etc.` the using `matches` would be the better option
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8878f0e9-2cec-4ce1-b581-029e83fa84bc" />
