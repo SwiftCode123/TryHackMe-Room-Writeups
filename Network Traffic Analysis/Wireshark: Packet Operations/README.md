@@ -127,3 +127,47 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 - Answer: `No answer needed`
 
 ## Task 5
+### What is the number of IP packets?
+
+- If we type `ip` into the display filter, we get the amount of displayed packets denoted by `Displayed:`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/afd0dd4e-611e-4314-935e-08c0cb1ddacd" />
+</p>
+
+- Answer: `81420`
+
+### What is the number of packets with a "TTL value less than 10"?
+
+- I typed `ip.ttl lt 10` which means at the network-level information get the TTL's value that is `lt` or `less than` the value `10`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/983c7d5b-8a38-4e23-bfb5-4f24e0be105f" />
+</p>
+
+- Answer: `66`
+
+### What is the number of packets which uses "TCP port 4444"?
+
+- This one is at the protocol-level and we can use `tcp.port == 4444` to get the amount of displayed packets
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/6c2f7a56-3f2f-464a-82cb-92f126da407f" />
+</p>
+
+- Answer: `632`
+
+### What is the number of "HTTP GET" requests sent to port "80"?
+
+- This one required the use of `&&` where we needed `http.request.method == "GET"` to fulfill the first part and then those go to TCP port `80` and this can be done via `tcp.dstport == 80` because those are the packets going to the destination and not just typing in `tcp.port == 80`. Difference between them is the first one has direction while the second one does not
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/7f83bc78-d7bc-45bf-bf51-01d1723fed61" />
+</p>
+
+- Answer: `527`
+
+### What is the number of type A DNS Queries?
+
+- This one was a bit tricky but the query was `dns.qry.type == 1` which gets all the `A` records, `dns.flags.response == 0` which gets the DNS queries as the question asked and then we have to filter out LLMNR queries as well because those can also be included DNS requests/responses via `!(llmnr)`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/4e0ef4fe-1c60-4e8d-926e-b7840e156f22" />
+</p>
+
+- Answer: `51`
