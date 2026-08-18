@@ -147,7 +147,7 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 
 ### What is the number of packets which uses "TCP port 4444"?
 
-- This one is at the protocol-level and we can use `tcp.dstport == 4444` to get the amount of displayed packets
+- This one is at the protocol-level and we can use `tcp.port == 4444` to get the amount of displayed packets
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/6c2f7a56-3f2f-464a-82cb-92f126da407f" />
 </p>
@@ -156,9 +156,9 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 
 ### What is the number of "HTTP GET" requests sent to port "80"?
 
-- This one required the use of `&&` where we needed `http.request.method == "GET"` to fulfill the first part and then those go to TCP port `80` and this can be done via `tcp.dstport == 80` because those are the packets going to the destination and not just typing in `tcp.port == 80`. Difference between them is the first one has direction while the second one does not
+- This one required the use of `&&` where we needed `http.request.method == "GET"` to fulfill the first part and then those go to TCP port `80` and this can be done via `tcp.dstport == 80` because those are the packets going to the destination and not just typing in `tcp.dstport == 80`. Difference between them is the first one has direction while the second one does not
 ```
-http.request.method == "GET" && tcp.port == 80
+http.request.method == "GET" && tcp.dstport == 80
 ```
 
 <p align="center">
