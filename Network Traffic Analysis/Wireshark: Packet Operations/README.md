@@ -175,7 +175,7 @@ dns.qry.type == 1 && dns.flags.response == 0 && !(llmnr)
 ```
 
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/4e0ef4fe-1c60-4e8d-926e-b7840e156f22" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/133717a7-f735-4c31-98c7-4d7c4a70b2f9" />
 </p>
 
 - Answer: `51`
