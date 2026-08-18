@@ -171,3 +171,23 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 </p>
 
 - Answer: `51`
+
+## Task 6
+### Find all Microsoft IIS servers. What is the number of packets that did not originate from "port 80"?
+- For this task, I typed in `http.server contains "Microsoft-IIS"` listing all HTTP packets where the `server` fields contains `Microsoft` and then those packets did not originate from `port 80` via `!(tcp.srcport == 80)`
+  
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/cf9eacee-4c18-4216-acd8-0d3b86807134" />
+</p>
+
+- Answer: `21`
+
+### Find all Microsoft IIS servers. What is the number of packets that have "version 7.5"?
+
+- The first part of this one was the same as the last one typing in `http.server contains "Microsoft-IIS"` and then `http.server contains "7.5"` to filter for the version number
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8878f0e9-2cec-4ce1-b581-029e83fa84bc" />
+</p>
+
+- Answer: `71`
