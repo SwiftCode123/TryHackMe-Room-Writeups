@@ -188,7 +188,7 @@ http.server contains "Microsoft-IIS" && !(tcp.srcport == 80)
 ```
 
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/cf9eacee-4c18-4216-acd8-0d3b86807134" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/405dd586-0e71-497d-b76b-4256c902f9bb" />
 </p>
 
 - Answer: `21`
