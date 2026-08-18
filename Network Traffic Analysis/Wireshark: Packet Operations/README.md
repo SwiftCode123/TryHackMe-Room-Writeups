@@ -157,6 +157,10 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 ### What is the number of "HTTP GET" requests sent to port "80"?
 
 - This one required the use of `&&` where we needed `http.request.method == "GET"` to fulfill the first part and then those go to TCP port `80` and this can be done via `tcp.dstport == 80` because those are the packets going to the destination and not just typing in `tcp.port == 80`. Difference between them is the first one has direction while the second one does not
+```
+http.request.method == "GET" && tcp.port == 80
+```
+
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/7f83bc78-d7bc-45bf-bf51-01d1723fed61" />
 </p>
@@ -166,6 +170,10 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 ### What is the number of type A DNS Queries?
 
 - This one was a bit tricky but the query was `dns.qry.type == 1` which gets all the `A` records, `dns.flags.response == 0` which gets the DNS queries as the question asked and then we have to filter out LLMNR queries as well because those can also be included in DNS requests/responses via `!(llmnr)`
+```
+dns.qry.type == 1 && dns.flags.response == 0 && !(llmnr)
+```
+
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/4e0ef4fe-1c60-4e8d-926e-b7840e156f22" />
 </p>
@@ -175,7 +183,10 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 ## Task 6
 ### Find all Microsoft IIS servers. What is the number of packets that did not originate from "port 80"?
 - For this task, I typed in `http.server contains "Microsoft-IIS"` listing all HTTP packets where the `server` fields contains `Microsoft` and then those packets did not originate from `port 80` via `!(tcp.srcport == 80)`
-  
+```
+http.server contains "Microsoft-IIS" && !(tcp.srcport == 80)
+```
+
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/cf9eacee-4c18-4216-acd8-0d3b86807134" />
 </p>
@@ -184,10 +195,23 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 
 ### Find all Microsoft IIS servers. What is the number of packets that have "version 7.5"?
 
-- The first part of this one was the same as the last one typing in `http.server contains "Microsoft-IIS"` and then `http.server matches "7.5"` to filter for the version number. Typing `http.server contains "7.5"` also works since technically we don't need a regular expression here. If we were searching for versions `7.1, 7.2, etc.` the using `matches` would be the better option
+- The first part of this one was the same as the last one typing in `http.server contains "Microsoft-IIS"` and then `http.server contains "7.5"` to filter for the version number. Now, typing `http.server matches "7.5"` also works buy technically we don't need a regular expression here. If we were searching for versions `7.1, 7.2, etc.` the using `matches` would be the better option
+```
+http.server contains "Microsoft-IIS" && http.server matches "7.5"
+```
 
 <p align="center">
-<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8878f0e9-2cec-4ce1-b581-029e83fa84bc" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/287c0cb8-75f6-455a-aa43-0261d34bbc07" />
 </p>
 
 - Answer: `71`
+
+### What is the total number of packets that use ports 3333, 4444 or 9999?
+
+- For this one, we can use a set of numbers as depicted by the curly braces
+```
+`tcp.port {3333, 4444, 9999}`
+```
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9e877ee4-9640-45a3-8c6f-223f5011843d" />
+</p>
