@@ -147,7 +147,7 @@ Learn the fundamentals of packet analysis with Wireshark and how to find the nee
 
 ### What is the number of packets which uses "TCP port 4444"?
 
-- This one is at the protocol-level and we can use `tcp.port == 4444` to get the amount of displayed packets
+- This one is at the protocol-level and we can use `tcp.dstport == 4444` to get the amount of displayed packets
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/6c2f7a56-3f2f-464a-82cb-92f126da407f" />
 </p>
