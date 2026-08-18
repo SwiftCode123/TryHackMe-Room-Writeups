@@ -210,7 +210,7 @@ http.server contains "Microsoft-IIS" && http.server matches "7.5"
 
 - For this one, we can use a set of numbers as depicted by the curly braces
 ```
-tcp.port {3333, 4444, 9999}
+tcp.port in {3333, 4444, 9999}
 ```
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9e877ee4-9640-45a3-8c6f-223f5011843d" />
