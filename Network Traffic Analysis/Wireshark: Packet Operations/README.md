@@ -271,3 +271,5 @@ string(ip.ttl) matches "[0 2 4 6 8]$"
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/b0da0266-58e0-4840-94fb-5eda61a31da0" />
 </p>
+
+- Answer: `261`
