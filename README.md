@@ -74,20 +74,22 @@ Event link: [TryHackMe - Hacker Holidays (2026)](https://tryhackme.com/hackerhol
 
 ## Rooms
 
+## Rooms
+
 | Room | Status | Writeup |
 |------|--------|---------|
-| The Brochure | ✅ Completed | [The Brochure](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/The%20Brochure/README.md) |
-| The Concierge Knows Too Much | ✅ Completed | [The Concierge Knows Too Much](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/The%20Concierge%20Knows%20Too%20Much/README.md) |
-| Room 404 | ✅ Completed | [Room 404](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/Room%20404/README.md) |
-| Complimentary | ✅ Completed | [Complimentary](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/Complimentary/README.md) |
-| Packed Light | ✅ Completed | [Packed Light](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/Packed%20Light/README.md) |
-| Beach Bar| ✅ Completed | [Beach Bar](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/Beach%20Bar/README.md) |
-| Overheard at Breakfast | ✅ Completed | [Overheard at Breakfast](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/Overheard%20at%20Breakfast/README.md) |
-| Do Not Disturb | ✅ Completed | [Do Not Disturb ](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/Do%20Not%20Disturb/README.md) |
-| Towel on the Sunbed | ✅ Completed | [Towel on the Sunbed](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/Towel%20on%20the%20Sunbed/README.md) |
-| CryptoCabana | ✅ Completed | [CryptoCabana](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/CryptoCabana/README.md) |
-| The Hollow Shell | ✅ Completed | [The Hollow Shell](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/The%20Hollow%20Shell/README.md) |
-| Infinity Pool | ✅ Completed | [Infinity Pool](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/Infinity%20Pool/README.md) |
-| After Hours | ✅ Completed | [After Hours](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/After%20Hours/README.md) |
-| The Guestbook | ✅ Completed | [The Guestbook](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/The%20Guestbook/README.md) |
-| Management Wants a Word | ✅ Completed | [Management Wants a Word](https://github.com/iamdhruvtripathi/CTF-writeups/blob/main/Hacker%20Holidays/Management%20Wants%20a%20Word/README.md) |
+| The Brochure | ✅ Completed | [The Brochure](./Hacker%20Holidays%202026/The%20Brochure/README.md) |
+| The Concierge Knows Too Much | ✅ Completed | [The Concierge Knows Too Much](./Hacker%20Holidays%202026/The%20Concierge%20Knows%20Too%20Much/README.md) |
+| Room 404 | ✅ Completed | [Room 404](./Hacker%20Holidays%202026/Room%20404/README.md) |
+| Complimentary | ✅ Completed | [Complimentary](./Hacker%20Holidays%202026/Complimentary/README.md) |
+| Packed Light | ✅ Completed | [Packed Light](./Hacker%20Holidays%202026/Packed%20Light/README.md) |
+| Beach Bar | ✅ Completed | [Beach Bar](./Hacker%20Holidays%202026/Beach%20Bar/README.md) |
+| Overheard at Breakfast | ✅ Completed | [Overheard at Breakfast](./Hacker%20Holidays%202026/Overheard%20at%20Breakfast/README.md) |
+| Do Not Disturb | ✅ Completed | [Do Not Disturb](./Hacker%20Holidays%202026/Do%20Not%20Disturb/README.md) |
+| Towel on the Sunbed | ✅ Completed | [Towel on the Sunbed](./Hacker%20Holidays%202026/Towel%20on%20the%20Sunbed/README.md) |
+| CryptoCabana | ✅ Completed | [CryptoCabana](./Hacker%20Holidays%202026/CryptoCabana/README.md) |
+| The Hollow Shell | ✅ Completed | [The Hollow Shell](./Hacker%20Holidays%202026/The%20Hollow%20Shell/README.md) |
+| Infinity Pool | ✅ Completed | [Infinity Pool](./Hacker%20Holidays%202026/Infinity%20Pool/README.md) |
+| After Hours | ✅ Completed | [After Hours](./Hacker%20Holidays%202026/After%20Hours/README.md) |
+| The Guestbook | ✅ Completed | [The Guestbook](./Hacker%20Holidays%202026/The%20Guestbook/README.md) |
+| Management Wants a Word | ✅ Completed | [Management Wants a Word](./Hacker%20Holidays%202026/Management%20Wants%20a%20Word/README.md) |
