@@ -220,10 +220,47 @@ tcp.port in {3333 4444 9999}
 
 ### What is the number of packets with "even TTL numbers"?
 
-- This one was the most tricky one as we first needed to get the TTL value which is network-level information via `ip.ttl` and then it required the conversion of the TTL field to strings via `string(ip.ttl)` and lastly match thsoe values in the set and the `$` just depicts the end of the set via `"[0 2 4 6 8]$"`
+- This one was the most tricky one as we first needed to get the TTL value which is network-level information via `ip.ttl` and then it required the conversion of the TTL field to strings via `string(ip.ttl)` and lastly match those values in the set and the `$` just depicts the end of the string via `"[0 2 4 6 8]$"`
+```
+string(ip.ttl) matches "[0 2 4 6 8]$"
+```
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a41d37ab-e58b-4d9b-9b91-99de13708ac3" />
 </p>
 
 - Answer: `77289`
+
+### Change the profile to "Checksum Control". What is the number of "Bad TCP Checksum" packets?
+
+- The way to change profiles in Wireshark is to go to `Edit > Configuration Profiles`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/01db1ed0-86bb-453f-bac7-077f32c0fdeb" />
+</p>
+
+- We can then choose the the profile we want which in this case is `Checksum control`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c65f0683-fcd1-403d-a6d8-01560eef39a7" />
+</p>
+
+- Now, we arrive here but we need to build a filter and I wasn't sure what the query was for `Bad TCP Checksum`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a806e0fc-067a-4505-92bb-0e141c674273" />
+</p>
+
+- However, there is a useful setting that can help us build these queries and its located in `Analyze > Display Filter Expressions`. The screen below can help us build the filters
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5012594a-649a-4ceb-a041-b6982cffa445" />
+</p>
+
+- Now, I searched for `bad` and then located TCP and we can see the filter that we need
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/eecdc499-31ca-4a5a-a9f0-b340bccceca5" />
+</p>
+
+- I clicked the `OK` button and then we can see the filter displayed and I hit enter and we get the total number of displayed packets
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/df29ead7-8fe5-4f38-9f18-45669f283d12" />
+</p>
+
+- Answer: `34185`
