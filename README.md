@@ -10,7 +10,7 @@ This repository contains all my public TryHackMe write-ups, including walkthroug
 
 > Note: Rooms marked with the 🚩 icon are CTF-style challenges, while rooms marked with the 🌐 icon are SOC Simulations
 
-## Content
+## TryHackMe Content
 
 ### Cyber Security 101
   - [Networking](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/tree/main/Networking)
@@ -56,7 +56,7 @@ This repository contains all my public TryHackMe write-ups, including walkthroug
 
 # CTF Writeups
 
-This repository contains my writeups and notes from Capture The Flag (CTF) challenges
+This section contains my write-ups and notes from Capture The Flag (CTF) challenges
 
 ## TryHackMe – Hacker Holidays (2026)
 
