@@ -238,7 +238,7 @@ string(ip.ttl) matches "[0 2 4 6 8]$"
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/01db1ed0-86bb-453f-bac7-077f32c0fdeb" />
 </p>
 
-- We can then choose the the profile we want which in this case is `Checksum control`
+- We can then choose the profile we want which in this case is `Checksum control`
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c65f0683-fcd1-403d-a6d8-01560eef39a7" />
 </p>
