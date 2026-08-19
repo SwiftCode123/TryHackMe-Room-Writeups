@@ -1,4 +1,4 @@
-# TryHackMe Writeups
+# Cybersecurity Writeups
 
 TryHackMe: https://tryhackme.com/
 
