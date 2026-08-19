@@ -56,7 +56,7 @@ This repository contains all my public TryHackMe write-ups, including walkthroug
 
 # CTF Writeups
 
-This section contains my write-ups and notes from Capture The Flag (CTF) challenges
+This section contains my write-ups and notes from Capture The Flag (CTF) events
 
 ## TryHackMe – Hacker Holidays (2026)
 
