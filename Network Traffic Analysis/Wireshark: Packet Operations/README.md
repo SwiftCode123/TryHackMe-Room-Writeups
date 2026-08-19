@@ -182,7 +182,7 @@ dns.qry.type == 1 && dns.flags.response == 0 && !(llmnr)
 
 ## Task 6
 ### Find all Microsoft IIS servers. What is the number of packets that did not originate from "port 80"?
-- For this task, I typed in `http.server contains "Microsoft-IIS"` listing all HTTP packets where the `server` fields contains `Microsoft` and then those packets did not originate from `port 80` via `!(tcp.srcport == 80)`
+- For this task, I typed in `http.server contains "Microsoft-IIS"` listing all HTTP packets where the `server` fields contains `Microsoft-IIS` and then those packets did not originate from `port 80` via `!(tcp.srcport == 80)`
 ```
 http.server contains "Microsoft-IIS" && !(tcp.srcport == 80)
 ```
