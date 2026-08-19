@@ -273,3 +273,20 @@ string(ip.ttl) matches "[0 2 4 6 8]$"
 </p>
 
 - Answer: `261`
+
+## Skills Learned
+
+* Learned how to use Wireshark Statistics features such as Resolved Addresses, Conversations, Endpoints, IPv4 Statistics, and DNS Statistics to extract useful information from packet captures
+* Developed the ability to identify IP addresses, hostnames, MAC address manufacturers, geographic information, and AS organizations associated with network traffic
+* Learned how to analyze network conversations and endpoints to determine traffic volumes, packet counts, transferred bytes, and frequently contacted destinations
+* Practiced writing Wireshark display filters using protocol fields, comparison operators, logical operators, sets, and negation to isolate specific traffic
+* Learned how to filter traffic based on IP TTL values, TCP ports, HTTP methods, HTTP server versions, DNS query types, and packet characteristics
+* Developed an understanding of directional filtering, such as distinguishing `tcp.dstport` from `tcp.port` when analyzing traffic sent to a specific destination
+* Practiced using string conversion and regular expressions with Wireshark filters to identify patterns such as even TTL values
+* Learned how to use `contains`, `matches`, and `in` effectively depending on whether the filtering requirement involves text, patterns, or multiple values
+* Learned how to use Wireshark Configuration Profiles and the Display Filter Expressions feature to identify and construct filters for specific packet conditions such as bad TCP checksums
+* Improved the ability to investigate large packet captures by combining statistical views with targeted display filters instead of manually examining individual packets
+
+## Conclusion
+
+This room provided practical experience with Wireshark packet analysis, moving from basic traffic statistics to more advanced display filtering techniques. The exercises demonstrated how Wireshark can be used to efficiently identify network hosts, services, protocols, traffic patterns, and potentially suspicious activity within a large packet capture. The main takeaway was that effective packet analysis depends on knowing both where to find relevant information in Wireshark and how to construct precise filters to narrow thousands of packets down to the traffic that matters
