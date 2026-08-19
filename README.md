@@ -74,8 +74,6 @@ Event link: [TryHackMe - Hacker Holidays (2026)](https://tryhackme.com/hackerhol
 
 ## Rooms
 
-## Rooms
-
 | Room | Status | Writeup |
 |------|--------|---------|
 | The Brochure | ✅ Completed | [The Brochure](./Hacker%20Holidays%202026/The%20Brochure/README.md) |
