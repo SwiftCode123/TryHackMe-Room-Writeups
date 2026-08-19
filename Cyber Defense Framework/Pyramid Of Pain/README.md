@@ -161,6 +161,8 @@ Learn what the Pyramid of Pain is and how it ranks indicators by how painful the
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e88c32cd-b610-4d34-980a-da26f05376ad" />
 </p>
 
+- Answer: `9`
+
 ### Chimera is a China-based hacking group that has been active since 2018. What is the name of the commercial, remote access tool they use for C2 beacons and data exfiltration?
 
 - First, I went to the website and clicked on `Exfiltration Over C2 Channel`
