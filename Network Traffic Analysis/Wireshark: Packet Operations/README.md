@@ -264,3 +264,10 @@ string(ip.ttl) matches "[0 2 4 6 8]$"
 </p>
 
 - Answer: `34185`
+
+### Use the existing filtering button to filter the traffic. What is the number of displayed packets?
+
+- If we click on the filtering button `gif/jpeg with http-200`, we get the total number of displayed packets
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/b0da0266-58e0-4840-94fb-5eda61a31da0" />
+</p>
