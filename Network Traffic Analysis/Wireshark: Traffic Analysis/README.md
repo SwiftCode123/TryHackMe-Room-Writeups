@@ -24,3 +24,7 @@ Learn the basics of traffic analysis with Wireshark and how to find anomalies on
 - Answer: `No answer needed`
 
 ## Task 2
+
+### What is the total number of the "TCP Connect" scans?
+
+- 
