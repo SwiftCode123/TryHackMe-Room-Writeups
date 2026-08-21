@@ -1,4 +1,4 @@
-<img width="1512" height="794" alt="image" src="https://github.com/user-attachments/assets/53948eaf-9355-4eb0-b97a-0512935953fd" /><p align="center">
+<p align="center">
   <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" width="150" alt="TryHackMe Logo">
 </p>
 
@@ -36,3 +36,5 @@ tcp.flags.syn==1 && tcp.flags.ack == 0 && tcp.window_size > 1024
 <p align="center">
 <img width="1512" height="794" alt="image" src="https://github.com/user-attachments/assets/667588bb-7c5a-49d9-b78d-1a98edcf45eb" />
 </p>
+
+- Answer: `1000`
