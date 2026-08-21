@@ -29,7 +29,7 @@ Learn the basics of traffic analysis with Wireshark and how to find anomalies on
 
 - To search for this, I used the below filter. The part `tcp.flags.syn == 1` is where the SYN flag is on, `tcp.flags.ack == 0` is the ACK flag being off and `tcp.window_size > 1024` is the receiver can receive more than `1024` bytes at a time. Essentially, we are looking initial TCP connection attempts with a relatively large receive window
 
-- Another thing is that TCP connect scans usually has a windows size larger than `1024` bytes as the request expects some data due to the nature of the protocol. We only want the attacker’s actions here, so we focus on the initial SYN packet and ignore the ACK/SYN-ACK responses from the target identifying the scanning attempt
+- Another thing is that TCP connect scans usually have a windows size larger than `1024` bytes as the request expects some data due to the nature of the protocol. We only want the attacker’s actions here, so we focus on the initial SYN packet and ignore the ACK/SYN-ACK responses from the target identifying the scanning attempt
 ```
 tcp.flags.syn==1 && tcp.flags.ack == 0 && tcp.window_size > 1024
 ```
