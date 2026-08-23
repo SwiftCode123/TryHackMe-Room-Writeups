@@ -149,3 +149,21 @@ http.host == testphp.vulnweb.com && http.request.method == "POST"
 </p>
 
 - Answer `6`
+
+### What is the password of the "Client986"?
+
+- As we know from the last task, the password of `Client986` is in packet `1668`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/b8a05bcc-9b14-4112-b196-7f1dbcc0477f" />
+</p>
+
+- Answer: `clientnothere!`
+
+### What is the comment provided by the "Client354"?
+
+- We can see the comment made in packet `2320` by `Client354`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c5fca89e-cc5e-4a88-be39-6457f8d4f06e" />
+</p>
+
+- Answer: `Nice work!`
