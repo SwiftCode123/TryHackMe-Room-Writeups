@@ -89,7 +89,9 @@ udp.dstport >= 55 and udp.dstport <= 70
 </p>
 
 - Now that we know the attacker's MAC address and where the requests are sent, we can filter the requests from the attacker because there may be some legitimate traffic as well. We then get the correct number of displayed packets
-
+```
+arp.opcode == 1 && arp.src.hw_mac == 00:0c:29:e2:18:b4 && arp.dst.hw_mac == 00:00:00:00:00:00
+```
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/fb37b03f-d682-4d9b-918b-3719455cf7b1" />
 </p>
