@@ -78,3 +78,74 @@ udp.dstport >= 55 and udp.dstport <= 70
 </p>
 
 - Answer: `68`
+
+## Task 2
+### What is the number of ARP requests crafted by the attacker?
+
+- For this task, I first needed to filter out for ARP requests via `arp.opcode == 1`. When I did that, we notice that there are a lot of ARP requests made by one particular IP address which is `192.168.1.25`. Then, I took a look at who the source MAC address was which was noted as `00:0c:29:e2:18:b4`. We also notice its sent to the destination MAC address of `00:00:00:00:00:00`. This is important to note because in ARP poisoning the attacker pretends to be a fake device on a network and links their own MAC address to the actual IP addresses to trick other devices into send traffic to the attacker's machine. Furthermore, the attacker is clearly trying to find devices on the local network 
+  
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/05c02861-de34-4ca0-9d18-158df44128f2" />
+</p>
+
+- Now that we know the attacker's MAC address and where the requests are sent, we can filter the requests from the attacker because there may be some legitimate traffic as well. We then get the correct number of displayed packets
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/fb37b03f-d682-4d9b-918b-3719455cf7b1" />
+</p>
+
+- Answer: `284`
+
+### What is the number of HTTP packets received by the attacker?
+
+- To filter out HTTP packets, we can simply type `http` and we get `92` displayed packets. However, further analyzing, we can see that `192.168.1.12` is sending data to `44.228.249.3` and it keeps going back and forth but one thing that we can notice is the destination MAC address is the attacker's MAC address as we saw from the last task. Therefore, the victim sends information to the attacker and the attacker forwards it to the real router and then the router sends information back to the attacker thinking its the victim computer and essentially we have a man-in-the-middle attack
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/b0bfba1d-f459-49c5-a479-beaaf3ec0348" />
+</p>
+
+- Now that we know this, we can filter out the amount of HTTP packets received by the attacker by including the attacker's MAC address in the display filter. We can apply this as a filter first
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/bbaa26e5-175c-479c-b8db-78b686bbab3a" />
+</p>
+
+- After applying the filter, we see the correct amount of packets displayed
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c516fa6c-d9ba-45f3-aeac-11cdbbd06ae7" />
+</p>
+
+- Answer: `90`
+
+### What is the number of sniffed username&password entries?
+
+- First thing I did was figure out which site the user was visiting and we can do this by following the `TCP stream` by right-clicking on any packet. It shows the user was visiting `testphp.vulnweb.com`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1a0d4754-1630-4fe1-8bee-f977a18961dd" />
+</p>
+
+- Now that we know this, we can filter for that site as well as filtering out the `POST` requests because we want to see what the user was inputting. We get `10` displayed packets
+
+```
+http.host == testphp.vulnweb.com && http.request.method == "POST"
+```
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/5cf55444-8fd1-4bfb-970a-32acbf940fea" />
+</p>
+
+- Going through packets `1599`, `1668` and `1791`, we can see the usernames and passwords for each
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/cf90fa01-34b8-4c4c-a7a9-304e643c542b" />
+</p>
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/1b669f8b-e8bf-42b1-affb-203f31c9da65" />
+</p>
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/600b2dc9-a659-4824-818d-434508d2a4cc" />
+</p>
+
+- Answer `6`
