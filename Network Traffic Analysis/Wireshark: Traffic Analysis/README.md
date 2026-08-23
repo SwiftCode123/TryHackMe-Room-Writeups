@@ -150,7 +150,7 @@ http.host == testphp.vulnweb.com && http.request.method == "POST"
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/600b2dc9-a659-4824-818d-434508d2a4cc" />
 </p>
 
-- Answer `6`
+- Answer: `6`
 
 ### What is the password of the "Client986"?
 
