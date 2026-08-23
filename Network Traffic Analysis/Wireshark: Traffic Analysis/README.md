@@ -169,3 +169,57 @@ http.host == testphp.vulnweb.com && http.request.method == "POST"
 </p>
 
 - Answer: `Nice work!`
+
+## Task 4
+### What is the MAC address of the host "Galaxy A30"?
+
+- We can use the filter `dhcp.option.hostname contains "A30"` and I only saw one packet which contained the MAC address of the hostname. Furthermore, we can see the actual hostname as well
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/a1f2e56c-36e5-4670-be0b-070e02b09483" />
+</p>
+
+- Answer: `9a:81:41:cb:96:6c`
+
+### How many NetBIOS registration requests does the "LIVALJM" workstation have?
+
+- We can use `nbns.name contains "LIVALJM" && nbns.flags.opcode == 5`. The first part `nbns.name contains "LIVALJM"` filters for the `LIVALJ` workstation and `nbns.flags.opcode == 5` gives us only name registration packets
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/f1c5f223-9056-4a37-afdc-7d19ee60f517" />
+</p>
+
+- Answer: `16`
+
+### Which host requested the IP address "172.16.13.85"?
+
+- If we filter for DHCP requests only via the filter `dhcp.option.requested_ip_address == 172.16.13.85`, we see only one packet `72529` which requested the IP address `172.16.13.85` and the hostname listed underneath `Option: (12) Host Name`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d2ae41d4-bd16-4c4a-8a58-8b5a2b19134d" />
+</p>
+
+- Answer: `Galaxy-A12`
+
+### What is the IP address of the user "u5"? (Enter the address in defanged format.)
+
+- I used the filter `kerberos.CNameString contains "u5"` and we can confirm that the `CNameString` for `10.1.12.2` is `u5` and know we know the IP address as well
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/08ff6038-0e99-4409-a22b-86044eda106c" />
+</p>
+
+- Answer: `10[.]1[.]12[.]2`
+
+### What is the hostname of the available host in the Kerberos packets?
+
+- To find the hostnames, we can apply the `CNameString` as a column
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8ebbbbd2-b9df-4eca-8346-92ce640715c4" />
+</p>
+
+- Here, we find the hostname aka the computer that was generating Kerberos traffic
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e287842d-cb9f-481f-ae98-633ec3c1d316" />
+</p>
+
+- Answer: `xp1$`
