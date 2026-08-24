@@ -278,6 +278,8 @@ ftp.response.code == 530
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/47c8721b-9da6-4ab6-a978-e213bde51c2f" />
 </p>
 
+- Answer: `737`
+
 ### What is the size of the file accessed by the "ftp" account?
 
 - We can see if any user is logged in and yes there was one
