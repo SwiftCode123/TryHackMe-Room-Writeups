@@ -255,7 +255,9 @@ data.len > 64 and icmp
 </p>
 
 - However, knowing that there can be long DNS addresses I tried to filter for the length of the name and we can see there is a suspicious domain here which is most likely our answer
-
+```
+dns.qry.name.len > 50 && !mdns
+```
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c040a884-61b8-4cd8-af70-c22a3cc64378" />
 </p>
