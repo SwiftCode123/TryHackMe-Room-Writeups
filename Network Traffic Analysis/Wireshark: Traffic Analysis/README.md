@@ -1,4 +1,4 @@
-<p align="center">
+<img width="1512" height="793" alt="image" src="https://github.com/user-attachments/assets/4978fdec-998a-4e4c-acfe-9b5d8d4539d3" /><img width="1512" height="791" alt="image" src="https://github.com/user-attachments/assets/45051c2f-d44e-4c95-959c-2ee295e18a5c" /><p align="center">
   <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" width="150" alt="TryHackMe Logo">
 </p>
 
@@ -223,3 +223,41 @@ http.host == testphp.vulnweb.com && http.request.method == "POST"
 </p>
 
 - Answer: `xp1$`
+
+### Use the "Desktop/exercise-pcaps/dns-icmp/icmp-tunnel.pcap" file. Investigate the anomalous packets. Which protocol is used in ICMP tunnelling?
+
+- For this one, I first filtered out ICMP traffic with a data length greater than 64 bytes, since ICMP packets are typically small. An unusually large ICMP payload could indicate that additional data is being smuggled or tunneled through ICMP traffic
+```
+data.len > 64 and icmp
+```
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0c041573-cb39-4afb-8168-6dad5049d3ac" />
+</p>
+
+- Now here I just started scrolling down the packets and watched if there was anything suspicious in the packet details or packet bytes panel and then I saw that SSH data/traffic is being smuggled over ICMP
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0a1ac234-7224-412f-9d02-b20da0889458" />
+</p>
+
+- We can even see more SSH related traffic in the next packet
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0e928aa0-acc2-467e-b81b-f2c85102f6e2" />
+</p>
+
+- Answer: `SSH`
+
+### Use the "Desktop/exercise-pcaps/dns-icmp/dns.pcap" file.Investigate the anomalous packets. What is the suspicious main domain address that receives anomalous DNS queries? (Enter the address in defanged format.)
+
+- I tried `dns contains "dnscat"` but I didn't really see anything related to an actual domain name
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d7933be4-2596-4d51-8101-409c7b468122" />
+</p>
+
+- However, knowing that there can be long DNS addresses I tried to filter for the length of the name and we can see there is a suspicious domain here which is most likely our answer
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/c040a884-61b8-4cd8-af70-c22a3cc64378" />
+</p>
+
+- Answer: `dataexfil[.]com`
