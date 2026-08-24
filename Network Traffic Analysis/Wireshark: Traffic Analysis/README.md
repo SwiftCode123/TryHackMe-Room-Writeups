@@ -247,6 +247,8 @@ data.len > 64 and icmp
 
 - Answer: `SSH`
 
+## Task 5
+
 ### Use the "Desktop/exercise-pcaps/dns-icmp/dns.pcap" file.Investigate the anomalous packets. What is the suspicious main domain address that receives anomalous DNS queries? (Enter the address in defanged format.)
 
 - I tried `dns contains "dnscat"` but I didn't really see anything related to an actual domain name
