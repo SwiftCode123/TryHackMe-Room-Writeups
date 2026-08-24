@@ -79,7 +79,7 @@ udp.dstport >= 55 and udp.dstport <= 70
 
 - Answer: `68`
 
-## Task 2
+## Task 3
 ### What is the number of ARP requests crafted by the attacker?
 
 - For this task, I first needed to filter out for ARP requests via `arp.opcode == 1`. When I did that, we notice that there are a lot of ARP requests made by one particular IP address which is `192.168.1.25`. Then, I took a look at who the source MAC address was which was noted as `00:0c:29:e2:18:b4`. We also notice its sent to the destination MAC address of `00:00:00:00:00:00`. This is important to note because in ARP poisoning the attacker pretends to be a fake device on a network and links their own MAC address to the actual IP addresses to trick other devices into send traffic to the attacker's machine. Furthermore, the attacker is clearly trying to find devices on the local network 
