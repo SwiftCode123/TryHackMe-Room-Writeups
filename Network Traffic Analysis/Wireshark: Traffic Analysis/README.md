@@ -263,3 +263,48 @@ dns.qry.name.len > 50 && !mdns
 </p>
 
 - Answer: `dataexfil[.]com`
+
+## Task 6
+### How many incorrect login attempts are there?
+
+- We can use the filter below to list all the failed login attempts
+```
+ftp.response.code == 530
+```
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/47c8721b-9da6-4ab6-a978-e213bde51c2f" />
+</p>
+
+### What is the size of the file accessed by the "ftp" account?
+
+- We can see if any user is logged in and yes there was one
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/619f72c3-2e16-4ccd-be08-2790bed471c3" />
+</p>
+
+- Following the `TCP Stream`, we can confirm this was the `ftp` account and the file size as indicated underneath the `SIZE resume.doc`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ffa74e3b-eeec-49a1-bd16-d77126975255" />
+</p>
+
+- Answer: `39424`
+
+### The adversary uploaded a document to the FTP server. What is the filename?
+
+- Now technically, we can see here that the attacker uploads a `README` file via the `STOR README`. However, I believe THM wanted `resume.doc` to be the answer because technically we can see that the attacker retrieves the file via `RETR resume.doc` but its possible maybe the attacker did something after with this file
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/11684950-fa8d-423e-80fd-1a499777515b" />
+</p>
+
+- Answer: `resume.doc`
+
+### The adversary tried to assign special flags to change the executing permissions of the uploaded file. What is the command used by the adversary?
+
+- We can see the commands used below but the attacker was denied permissions
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/00b5697c-8418-4146-9d20-60c2c2f1b668" />
+</p>
+
+- Answer: `chmod 777`
