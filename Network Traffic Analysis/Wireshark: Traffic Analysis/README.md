@@ -224,6 +224,8 @@ http.host == testphp.vulnweb.com && http.request.method == "POST"
 
 - Answer: `xp1$`
 
+## Task 5
+
 ### Use the "Desktop/exercise-pcaps/dns-icmp/icmp-tunnel.pcap" file. Investigate the anomalous packets. Which protocol is used in ICMP tunnelling?
 
 - For this one, I first filtered out ICMP traffic with a data length greater than 64 bytes, since ICMP packets are typically small. An unusually large ICMP payload could indicate that additional data is being smuggled or tunneled through ICMP traffic
@@ -246,8 +248,6 @@ data.len > 64 and icmp
 </p>
 
 - Answer: `SSH`
-
-## Task 5
 
 ### Use the "Desktop/exercise-pcaps/dns-icmp/dns.pcap" file.Investigate the anomalous packets. What is the suspicious main domain address that receives anomalous DNS queries? (Enter the address in defanged format.)
 
