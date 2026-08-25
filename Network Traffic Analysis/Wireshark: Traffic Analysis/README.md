@@ -363,7 +363,7 @@ ftp.response.code == 530
 ## Task 8
 ### What is the frame number of the "Client Hello" message sent to "accounts.google.com"?
 
-- For this task, we can use the filter `(http.request or tls.handshake.type == 1) and !(ssdp)` which shows HTTP traffic and the start of a TLS/HTTPS connection, but exclude SSDP traffic. However, note that I didn't get the server names but we can apply that as a column
+- For this task, we can use the filter `(http.request or tls.handshake.type == 1) and !(ssdp)` which shows HTTP traffic and the start of a TLS/HTTPS connection, but excludes SSDP traffic. However, note that I didn't get the server names but we can apply that as a column
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/88fa813d-5154-4fc4-9fec-b7595d0d29b5" />
