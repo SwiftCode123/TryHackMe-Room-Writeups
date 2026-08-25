@@ -424,3 +424,24 @@ ftp.response.code == 530
 </p>
 
 - Answer: `FLAG{THM-PACKETMASTER}`
+
+## Task 9
+### Use the "Desktop/exercise-pcaps/bonus/Bonus-exercise.pcap" file. What is the packet number of the credentials using "HTTP Basic Auth"?
+
+- I went to `Tools > Credentials` and we can see the packet number here for `HTTP Basic Auth`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/03bd5171-939d-43aa-89f7-81bab003a88e" />
+</p>
+
+- Answer: `237`
+
+### What is the packet number where "empty password" was submitted?
+
+- Click on each packet number one by one, we can see once we get to packet number `170`, there is no password after `PASS`. For the other packets, there was a password provided after `PASS` such as `Request: PASS nancy` for packet number `126`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/966a6b0d-800a-4eb5-a074-6174848e74d3" />
+</p>
+
+- Answer: `170`
+
+## Task 10
