@@ -359,3 +359,39 @@ ftp.response.code == 530
 </p>
 
 - Answer: `62[.]210[.]130[.]250`
+
+## Task 8
+### What is the frame number of the "Client Hello" message sent to "accounts.google.com"?
+
+- For this task, we can use the filter `(http.request or tls.handshake.type == 1) and !(ssdp)` which shows HTTP traffic and the start of a TLS/HTTPS connection, but exclude SSDP traffic. However, note that I didn't get the server names but we can apply that as a column
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/88fa813d-5154-4fc4-9fec-b7595d0d29b5" />
+</p>
+
+- With applying that as a column, we can see the frame number properly
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/47117c2e-878d-4d10-9168-3458b795410c" />
+</p>
+
+- Answer: `16`
+
+### Decrypt the traffic with the "KeysLogFile.txt" file. What is the number of HTTP2 packets?
+
+- First, we need to actual give Wireshark the `KeysLogFile.txt` file and we can do this via `left-click` on any packet, then `Protocol Preferences` and then `(Pre)-Master-Secret log filename...`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/0e818d97-01b7-468d-b5db-247f07210d06" />
+</p>
+
+- We can find `TLS` and then upload the `KeysLogFile.txt` file
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/841c54b9-a1c1-4b2f-80b8-a7d29a31b9ce" />
+</p>
+
+- I typed `http2` and we get the correct number of displayed packets
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/599bed4e-af25-4d45-a124-6b2922c592e4" />
+</p>
+
+- Answer: `115`
