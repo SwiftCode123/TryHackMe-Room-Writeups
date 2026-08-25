@@ -287,7 +287,7 @@ ftp.response.code == 530
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/619f72c3-2e16-4ccd-be08-2790bed471c3" />
 </p>
 
-- Following the `TCP Stream`, we can confirm this was the `ftp` account and the file size as indicated underneath the `SIZE resume.doc`
+- Following the `TCP Stream`, we can confirm this was the `ftp` account and the file size as indicated underneath `SIZE resume.doc`
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/ffa74e3b-eeec-49a1-bd16-d77126975255" />
 </p>
@@ -311,4 +311,51 @@ ftp.response.code == 530
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/00b5697c-8418-4146-9d20-60c2c2f1b668" />
 </p>
 
-- Answer: `chmod 777`
+- Answer: `CHMOD 777`
+
+## Task 7
+### Investigate the user agents. What is the number of anomalous  "user-agent" types?
+
+- For this one, I just scrolled down the `.pcap` file and noted the weird user-agents as asked. There was the JNDI (Log4j exploit), Windows 6.4 which was never released as an OS, Wfuzz, sqlmap, Mozlila, and Mozilla with nmap scripting 
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/6ee46e71-01fa-456c-9aa1-f04a1e4dbed7" />
+</p>
+
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/3d6953d5-7c73-4136-9b3e-817408832b15" />
+</p>
+
+- Answer: `6`
+
+### What is the packet number with a subtle spelling difference in the user agent field?
+
+- There is only one packet with the subtle misspelling
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8e8d0704-68d3-4089-9e9d-f82c96cf44f2" />
+</p>
+
+- Answer: `52`
+
+### Locate the "Log4j" attack starting phase. What is the packet number?
+
+- Filtering for the Log4j attack starting phase, we can see what packet number it is
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/74550297-2b44-488b-bd39-5d594d5fa9bc" />
+</p>
+
+- Answer: `444`
+
+### Locate the "Log4j" attack starting phase and decode the base64 command. What is the IP address contacted by the adversary? (Enter the address in defanged format and exclude "{}".)
+
+- We can copy and paste the Base64 encoded command from here into Cyberchef
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/747575fc-9d12-478b-bad9-96e6cbf76f70" />
+</p>
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/01427f51-167a-4513-9b7b-c5751cfcada4" />
+</p>
+
+- Answer: `62[.]210[.]130[.]250`
