@@ -395,3 +395,32 @@ ftp.response.code == 530
 </p>
 
 - Answer: `115`
+
+### Go to Frame 322. What is the authority header of the HTTP2 packet? (Enter the address in defanged format.)
+
+- We can see the authority header in frame `322`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d2164763-abc5-4a58-875d-68493d70a685" />
+</p>
+
+- Answer: `safebrowsing[.]googleapis[.]com`
+
+### Investigate the decrypted packets and find the flag! What is the flag?
+
+- For this one, I first typed `http2` to see the packets and we can see that there is a outbound request to `flag.txt`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/f79e9b35-3a79-4c85-8d7f-205af9a02e25" />
+</p>
+
+- Since the traffic is already decrypted, I can use Wireshark’s `Export Objects` feature to extract the file directly instead of manually following the packets. I went to `File → Export Objects → HTTP` and looked for the downloaded file. I then clicked `Save`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/8722ae3b-e298-4142-b555-71e1963847c1" />
+</p>
+
+- Opening up the file, we can see the flag
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/73f974ae-98c7-4a6c-83eb-e2b6ad27ed2c" />
+</p>
+
+- Answer: `FLAG{THM-PACKETMASTER}`
