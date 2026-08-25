@@ -437,7 +437,7 @@ ftp.response.code == 530
 
 ### What is the packet number where "empty password" was submitted?
 
-- Click on each packet number one by one, we can see once we get to packet number `170`, there is no password after `PASS`. For the other packets, there was a password provided after `PASS` such as `Request: PASS nancy` for packet number `126`
+- Clicking on each packet number one by one, we can see once we get to packet number `170`, there is no password after `PASS`. For the other packets, there was a password provided after `PASS` such as `Request: PASS nancy` for packet number `126`
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/966a6b0d-800a-4eb5-a074-6174848e74d3" />
 </p>
