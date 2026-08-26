@@ -10,7 +10,7 @@
 
 # Room Information
 ```bash Type: Walkthrough
-Difficulty: medium
+Difficulty: Medium
 Tags: - 
 Meta Tags: Walkthrough, Walk-through, Write-up, Writeup
 Subscription type: Premium
