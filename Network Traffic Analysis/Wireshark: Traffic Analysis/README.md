@@ -445,3 +445,23 @@ ftp.response.code == 530
 - Answer: `170`
 
 ## Task 10
+
+### Use the "Desktop/exercise-pcaps/bonus/Bonus-exercise.pcap" file. Select packet number 99. Create a rule for "IPFirewall (ipfw)". What is the rule for "denying source IPv4 address"?
+
+- I went to packet `90` and then went to `Tools > Firewall ACL Rules` and then I selected the appropriate firewall system (`IPFirewall (ipfw)`) we can see the rule name for denying IPv4 source address
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/f7ea1ef4-405d-4417-ba1f-04cfbb51d06b" />
+</p>
+
+- Answer: `add deny ip from 10.121.70.151 to any in`
+
+### Select packet number 231. Create "IPFirewall" rules. What is the rule for "allowing destination MAC address"?
+
+- I did the same exact thing here except unchecking the box `Deny` since we want to allow traffic to pass
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/bdc81a4d-8c76-43c1-8ec9-79b1bf9faef2" />
+</p>
+
+- Answer: `add allow MAC 00:d0:59:aa:af:80 any in`
