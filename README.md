@@ -50,7 +50,7 @@ This repository contains all my public TryHackMe write-ups, including walkthroug
     - [Snapped Phish-ing Line (CTF Challenge 🚩)](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Phishing%20Analysis/Snapped%20Phish-ing%20Line/README.md)
   - [Network Traffic Analysis](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/tree/main/Network%20Traffic%20Analysis)
     - [Wireshark: Packet Operations](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Network%20Traffic%20Analysis/Wireshark%3A%20Packet%20Operations/README.md)
-    - [Wireshark: Traffic Analysis](https://github.com/iamdhruvtripathi/Cybersecurity-Writeups/blob/main/Network%20Traffic%20Analysis/Wireshark:%20Traffic%20Analysis/README.md) 🚧 IN PROGRESS 🚧   
+    - [Wireshark: Traffic Analysis](https://github.com/iamdhruvtripathi/Cybersecurity-Writeups/blob/main/Network%20Traffic%20Analysis/Wireshark:%20Traffic%20Analysis/README.md)
 
 ### SOC Simulator
   - [Introduction To Phishing (SOC Simulator 🌐)](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/SOC%20Simulator/Introduction%20to%20Phishing/README.md)
