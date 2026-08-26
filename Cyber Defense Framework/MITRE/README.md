@@ -212,7 +212,6 @@ Explore the various resources that MITRE has made available to the cyber securit
 * Explored MITRE CAR analytics to identify detection use cases, analytic types, and ATT&CK tactic mappings
 * Analyzed MITRE D3FEND defensive techniques and the digital artifacts leveraged for threat detection
 * Explored additional MITRE frameworks including AADAPT and ATLAS to understand cryptocurrency and AI-related adversary techniques
-* Improved proficiency in navigating MITRE resources to support threat intelligence, detection engineering, and security analysis
 
 ## Conclusion
 
