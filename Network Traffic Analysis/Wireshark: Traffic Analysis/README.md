@@ -487,7 +487,6 @@ ftp.response.code == 530
 * Used decrypted HTTP2 traffic to investigate requests and extract files from packet captures
 * Practiced identifying HTTP Basic Authentication credentials and empty password submissions
 * Gained familiarity with creating IPFirewall rules based on captured network traffic
-* Strengthened my overall ability to investigate suspicious network behavior through packet-level analysis
 
 ## Conclusion
 
