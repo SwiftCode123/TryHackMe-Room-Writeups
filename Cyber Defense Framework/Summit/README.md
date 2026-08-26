@@ -47,7 +47,7 @@ Following the Pyramid of Pain's ascending priority of indicators, your objective
 
 - As you can see I selected `sample1.exe` and clicked the button `Submit for Analysis`. Now, remembering from the `Pyramid Of Pain` room and general knowledge, we can block files from executing via their hashes. The hashes are at the lowest tier in the pyramid and so an attacker can just change something in the file to create a completely different hash and so its not really frustrating for an attacker to evade this defense. We can not just rely on hashes
 
-- I copied the hash and pasted it in the `Hash Blocklist` and successfully prevented the file from running
+- I copied the `MD5` hash and pasted it in the `Hash Blocklist` and successfully prevented the file from running
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/75a55922-8f33-4472-8c0e-661f97b89348" />
