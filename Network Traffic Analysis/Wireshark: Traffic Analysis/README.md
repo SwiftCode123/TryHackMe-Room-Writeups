@@ -34,7 +34,7 @@ Learn the basics of traffic analysis with Wireshark and how to find anomalies on
 tcp.flags.syn==1 && tcp.flags.ack == 0 && tcp.window_size > 1024
 ```
 <p align="center">
-<img width="1512" height="794" alt="image" src="https://github.com/user-attachments/assets/667588bb-7c5a-49d9-b78d-1a98edcf45eb" />
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/667588bb-7c5a-49d9-b78d-1a98edcf45eb" />
 </p>
 
 - Answer: `1000`
