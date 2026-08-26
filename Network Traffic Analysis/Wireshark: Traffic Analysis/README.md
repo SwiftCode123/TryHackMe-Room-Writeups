@@ -465,3 +465,30 @@ ftp.response.code == 530
 </p>
 
 - Answer: `add allow MAC 00:d0:59:aa:af:80 any in`
+
+## Skills Learned
+
+* Developed practical experience using Wireshark display filters to isolate specific network traffic
+* Improved my ability to identify TCP Connect scans by analyzing SYN, ACK, and window size values
+* Gained a better understanding of TCP and UDP scanning techniques and how they appear in packet captures
+* Practiced identifying closed UDP ports through ICMP destination unreachable messages
+* Built experience detecting ARP poisoning and potential man-in-the-middle activity
+* Strengthened my ability to trace attacker traffic using MAC addresses and packet characteristics
+* Practiced analyzing HTTP requests to uncover usernames, passwords, and submitted data
+* Used TCP stream analysis to investigate network conversations and extract useful information
+* Improved my ability to investigate DHCP, NetBIOS, and Kerberos traffic to identify hosts and users
+* Gained experience detecting ICMP tunneling and recognizing SSH traffic hidden within ICMP packets
+* Practiced identifying suspicious DNS queries that could indicate tunneling or data exfiltration
+* Developed skills for investigating FTP activity, including failed logins, file transfers, and attacker commands
+* Improved my ability to recognize suspicious user agents associated with security tools and exploitation attempts
+* Practiced investigating Log4j exploitation activity and decoding Base64 encoded commands
+* Gained experience identifying TLS Client Hello messages and determining the requested host
+* Practiced decrypting TLS traffic in Wireshark using a key log file
+* Used decrypted HTTP2 traffic to investigate requests and extract files from packet captures
+* Practiced identifying HTTP Basic Authentication credentials and empty password submissions
+* Gained familiarity with creating IPFirewall rules based on captured network traffic
+* Strengthened my overall ability to investigate suspicious network behavior through packet-level analysis
+
+## Conclusion
+
+This room provided hands-on practice with Wireshark and showed how packet captures can be used to investigate network activity, identify attacks, and uncover suspicious behavior. The exercises covered a wide range of techniques including network scanning, ARP poisoning, credential sniffing, protocol analysis, tunneling, DNS exfiltration, FTP abuse, Log4j exploitation, and encrypted traffic analysis. I also became more comfortable with advanced Wireshark features such as TCP stream following, custom display filters, packet field columns, TLS decryption, file extraction, and firewall rule generation. Overall, the room strengthened my ability to investigate network traffic and use packet-level evidence to understand what happened during a security incident
