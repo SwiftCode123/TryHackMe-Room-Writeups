@@ -79,13 +79,13 @@ Following the Pyramid of Pain's ascending priority of indicators, your objective
 
 - However, remembering from the `Pyramid of Pain`, an attacker can just get a new public IP address as stated in the email above. It is not hard for the attacker to evade this defense but it was a bit harder for the attacker considering `IP addresses` are above `Hash Values` in the pyramid
 
-- I went back to Malware Sandbox and uploaded the `sample3.exe` and it generated the report. I scrolled all the way down and we can see some domain names. I noticed that `backdoor.exe` is making a outbound connection to `emudyn.bresonicz.info` over port `80`. Furthermore, `sample3.exe` is also communicating with the malicious domain over port `80` and `1337`.
+- I went back to Malware Sandbox and uploaded the `sample3.exe` and it generated the report. I scrolled all the way down and we can see some domain names. I noticed that `backdoor.exe` is making a outbound connection to `emudyn.bresonicz.info` over port `80`. Furthermore, `sample3.exe` is also communicating with the malicious domain over port `80` and `1337`
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/51be2f89-f7d3-4bc8-a35b-a3da04d1a759" />
 </p>
 
-- There are also two HTTP requests made by `sample3.exe` to domain. `Xplorita Cloud Services`, seems be hosting the malicious infrastructure for this attack. So, what I am assuming happened is that `sample3.exe` acted as a dropper, ran first and then connected to `http://emudyn.bresonicz.info/backdoor.exe` to download `backdoor.exe` over port 80
+- There are also two HTTP requests made by `sample3.exe` to domain. `Xplorita Cloud Services` seems to be hosting the malicious infrastructure for this attack. So, what I am assuming happened is that `sample3.exe` acted as a dropper, ran first and then connected to `http://emudyn.bresonicz.info/backdoor.exe` to download `backdoor.exe` over port 80
 
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d34692a6-e26a-41a2-afa3-1144d60b43fe" />
