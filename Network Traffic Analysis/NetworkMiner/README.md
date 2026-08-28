@@ -195,7 +195,7 @@ Learn how to use NetworkMiner to analyze recorded traffic files and practice net
 
 ### Investigate the hosts 131.151.37.122 and 131.151.32.91. How many bytes were sent by the client (*.32.91) through port 1065?
 
-- If we click on the `+` next to `131.151.37.122` and then the `+` icon next to `Incoming sessions: 2` and then the `+` icon next to `Server: 131.151.37.122 (Windows) TCP 1065)`, we can see how many bytes were sent by `131.151.32.91` through port `1065`
+- If we click on the `+` next to `131.151.37.122` and then the `+` icon next to `Incoming sessions: 2` and then the `+` icon next to `Server: 131.151.37.122 (Windows) TCP 1065`, we can see how many bytes were sent by `131.151.32.91` through port `1065`
 <p align="center">
 <img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/791ad575-d140-44c4-9b09-37902b7cbc51" />
 </p>
