@@ -288,17 +288,22 @@ Learn how to use NetworkMiner to analyze recorded traffic files and practice net
 
 ## Skills Learned
 
-* Analyzed PCAP files in NetworkMiner to investigate captured network traffic
-* Identified frame counts, packet activity, MAC addresses, and host information
-* Investigated hosts to uncover operating systems, web server banners, and network sessions
-* Extracted usernames, NTLMv2 hashes, email addresses, and other credentials from captured traffic
-* Used filters for frame numbers, filenames, parameters, and protocols to quickly locate evidence
-* Traced files and images back to their source IP addresses
-* Identified Linux distributions, Windows versions, USB brands, and mobile phone models from network artifacts
-* Investigated emails, DNS queries, POP3 traffic, and TLS anomalies
-* Compared NetworkMiner versions to understand differences in packet and MAC address analysis
-* Examined network sessions and ports to determine how much data was transferred
-* Used multiple artifacts together to piece together information during a network forensic investigation
+* Analyzed PCAP files in NetworkMiner to investigate captured network traffic and identify useful forensic artifacts
+* Identified frame counts, packet activity, MAC addresses, IP addresses, and host information within captured traffic
+* Investigated individual hosts to uncover operating systems, web server banners, incoming sessions, and communication details
+* Extracted usernames, NTLMv2 authentication hashes, email addresses, and exposed credentials from captured network traffic
+* Used filters for frame numbers, filenames, parameter names, and specific values to quickly locate relevant evidence
+* Traced transferred files and images back to their source IP addresses and associated hosts
+* Identified Linux distributions, Windows versions, USB product brands, and mobile phone models from network artifacts
+* Investigated captured emails to identify senders, subjects, email addresses, and the platforms associated with messages
+* Examined POP3 traffic to identify email servers, accounts, protocols, and authentication information
+* Analyzed DNS traffic to determine the domain queried by a specific frame or host
+* Investigated detected TLS anomalies and identified the frame numbers associated with suspicious traffic
+* Compared different NetworkMiner versions to understand differences in MAC address detection, frame handling, and packet details
+* Examined network sessions and TCP ports to determine which hosts communicated and how many bytes were transferred
+* Retrieved TCP sequence numbers and other packet-level details when using the appropriate NetworkMiner version
+* Connected information from hosts, files, credentials, sessions, and protocols to build a clearer picture of network activity
+
 
 ## Conclusion
 
