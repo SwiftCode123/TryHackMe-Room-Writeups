@@ -153,3 +153,32 @@ Learn how to use NetworkMiner to analyze recorded traffic files and practice net
 </p>
 
 - Answer: `branson@sandsite.org`
+
+## Task 6
+### Which version can detect duplicate MAC addresses?
+
+- Version 2.7 can identify MAC address conflicts while version 1.6 can not
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/11ceed46-0e1d-4051-8c37-1a4160f93d47" />
+</p>
+
+- Answer: `2.7`
+
+### Which version can handle frames?
+
+- Version 1.6 provides the number of frame and details about the frames
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9d9cc531-7fb1-494c-8ddb-486f3c66421d" />
+</p>
+
+- Answer: `1.6`
+
+### Which version can provide more details on packet details?
+
+- Version 1.6 and below can handle packets in more detail
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/673dbb9c-b442-4569-b461-c5044e6e2898" />
+</p>
+
+- Answer: `1.6`
