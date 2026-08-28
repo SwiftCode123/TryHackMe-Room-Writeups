@@ -182,3 +182,104 @@ Learn how to use NetworkMiner to analyze recorded traffic files and practice net
 </p>
 
 - Answer: `1.6`
+
+## Task 7
+### Use the ~/Desktop/Exercise Files/case1.pcap file to answer the questions below. What is the full OS name of the host 131.151.37.122?
+
+- Opening up the file, I clicked on the `+` icon next to `131.151.37.122` and then the `+` icon next to `OS: Windows` to see the hostname
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/9e2bc13d-549c-4418-ad05-27180f1de528" />
+</p>
+
+### Investigate the hosts 131.151.37.122 and 131.151.32.91. How many bytes were sent by the client (*.32.91) through port 1065?
+
+- If we click on the `+` next to `131.151.37.122` and then the `+` icon next to `Incoming sessions: 2` and then the `+` icon next to `Server: 131.151.37.122 (Windows) TCP 1065)`, we can see how many bytes were sent by `131.151.32.91` through port `1065`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/791ad575-d140-44c4-9b09-37902b7cbc51" />
+</p>
+
+- Answer: `192`
+
+### Investigate the communication between 131.151.37.122 and 131.151.32.21. How many bytes were sent back by the server (*.37.122) through port 143?
+
+- We can repeat similar steps appear like the last question and we see the number of bytes sent by the server through port `143`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/563394fc-63c3-459e-9232-6eb372412ca4" />
+</p>
+
+- Answer: `20769`
+
+### What is the sequence number of frame number 9?
+
+- For this question, we switch to a different version of NetworkMiner namely `NetworkMiner 1.6.1` to see the sequence number of frames
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d08cec10-ea55-4a16-84c0-7dbd728fb8cf" />
+</p>
+
+- Answer: `2AD77400`
+
+### What is the number of the detected "content types"?
+
+- I went into the `Parameters` tab and typed in the filter `Content-Type` and set the dropdown next to `ExactPhrase` to `Parameter name` and we see there is only `2` types of content which are `text/plain` and `multipart/mixed`
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e478d903-4412-4b98-b7c7-92261675c5a4" />
+</p>
+
+- Answer: `2`
+
+### Use the ~/Desktop/Exercise Files/case2.pcap file to answer the questions below. What is the USB product's brand name?
+
+- For this one, we can go to the `Files` tab and filter for `USB`. Clicking on the first one and opening up the file, we can see the USB product's brand name in the HTML code
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/e72a0b67-7ab1-427a-b0a9-e555b0187ef1" />
+</p>
+
+- Answer: `ASIX`
+
+### What is the name of the phone model?
+
+- Under the `Images` tab, I was scrolling for a while until I found this image named `Store_Lumia_Nav` which is a phone
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/17d4fe88-3192-4e89-9ded-85ef8621dd1b" />
+</p>
+
+- We can go back into the `Files` tab and see filter for `Lumia` and see two options with the first one being the phone name
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/74bc18de-f0b8-4af5-b0cc-931c22a4f54c" />
+</p>
+
+- Answer: `Lumia 535`
+
+### What is the source IP of the fish image?
+
+- For this one, we can search for the image name of the fish under the `Files` tab and the name was `Crazy-Fishing[1].jpg` along with the IP address listed next to `Source host`
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/db1bdd68-2acc-426b-8840-67db7acfd018" />
+</p>
+
+- Answer: `50.22.95.9`
+
+### What is the password of the homer.pwned.se@gmx.com?
+- Under the `Parameters` tab, we can filter for `homer.pwned.se@gmx.com` and looking here, we see multiple lines with `homer.pwned.se@gmx.com` indicating that this user is connecting to a GMX email server using a standard email protocol (TCP port `110`, which is used for POP3 email). It shows data traveling between an external mail server IP address (`212.227.17.171`) and a local computer on the network (`192.168.0.51`)
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/d36dce32-7dc7-4f43-a048-688e44d9eb8e" />
+</p>
+
+- Clicking on the `Credentials` tab, we can see the user's exact email, protocol (`Pop3`), the server the user is connected to and the password
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/65c0b6d4-bd36-4d9e-89b0-1f87f6c0f23c" />
+</p>
+
+- Answer: `spring2015`
+
+### What is the DNS query of frame 62001?
+
+- This one was a bit simpler as we can go to the `DNS` tab and filter for the frame number `62001` and see the DNS query made
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/285197ce-4bdd-4226-a391-67fc6fb7c2ad" />
+</p>
+
+- Answer: `pop.gmx.com`
