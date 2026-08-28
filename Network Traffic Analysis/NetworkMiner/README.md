@@ -285,3 +285,21 @@ Learn how to use NetworkMiner to analyze recorded traffic files and practice net
 </p>
 
 - Answer: `pop.gmx.com`
+
+## Skills Learned
+
+* Analyzed PCAP files in NetworkMiner to investigate captured network traffic
+* Identified frame counts, packet activity, MAC addresses, and host information
+* Investigated hosts to uncover operating systems, web server banners, and network sessions
+* Extracted usernames, NTLMv2 hashes, email addresses, and other credentials from captured traffic
+* Used filters for frame numbers, filenames, parameters, and protocols to quickly locate evidence
+* Traced files and images back to their source IP addresses
+* Identified Linux distributions, Windows versions, USB brands, and mobile phone models from network artifacts
+* Investigated emails, DNS queries, POP3 traffic, and TLS anomalies
+* Compared NetworkMiner versions to understand differences in packet and MAC address analysis
+* Examined network sessions and ports to determine how much data was transferred
+* Used multiple artifacts together to piece together information during a network forensic investigation
+
+## Conclusion
+
+This room provided hands-on experience using NetworkMiner to analyze PCAP files and extract useful forensic evidence. It demonstrated how network captures can reveal information about hosts, users, credentials, files, emails, DNS queries, and network communications. Overall, the room improved my ability to navigate captured traffic, use filters effectively, and connect different network artifacts to investigate activity
