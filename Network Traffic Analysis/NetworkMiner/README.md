@@ -262,7 +262,7 @@ Learn how to use NetworkMiner to analyze recorded traffic files and practice net
 
 - Answer: `50.22.95.9`
 
-### What is the password of the homer.pwned.se@gmx.com?
+### What is the password of the `homer.pwned.se@gmx.com`?
 - Under the `Parameters` tab, we can filter for `homer.pwned.se@gmx.com` and looking here, we see multiple lines with `homer.pwned.se@gmx.com` indicating that this user is connecting to a GMX email server using a standard email protocol (TCP port `110`, which is used for POP3 email). It shows data traveling between an external mail server IP address (`212.227.17.171`) and a local computer on the network (`192.168.0.51`)
 
 <p align="center">
