@@ -29,3 +29,15 @@ Learn how to detect data exfiltration attempts in various network channels.
 
 - Answer: `No answer needed`
 
+## Task 3
+### Exfiltrating the data through HTTP comes under which technique?
+
+- We can see which row exfiltrating data under HTTP comes under
+
+<p align="center">
+<img width="90%" height="90%" alt="image" src="https://github.com/user-attachments/assets/37c88f94-6dad-4f63-ab08-ddbb48ca1454" />
+</p>
+
+- Answer: `Network-based`
+
+### Task 4
