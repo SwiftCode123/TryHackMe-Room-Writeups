@@ -52,7 +52,7 @@ This repository contains all my public TryHackMe write-ups, including walkthroug
     - [Wireshark: Packet Operations](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/Network%20Traffic%20Analysis/Wireshark%3A%20Packet%20Operations/README.md)
     - [Wireshark: Traffic Analysis](https://github.com/iamdhruvtripathi/Cybersecurity-Writeups/blob/main/Network%20Traffic%20Analysis/Wireshark:%20Traffic%20Analysis/README.md)
     - [NetworkMiner](https://github.com/iamdhruvtripathi/Cybersecurity-Writeups/blob/main/Network%20Traffic%20Analysis/NetworkMiner/README.md)
-    - [Data Exfiltration Detection](🚧 IN PROGRESS 🚧)
+    - [Data Exfiltration Detection](https://github.com/iamdhruvtripathi/Cybersecurity-Writeups/blob/main/Network%20Security%20Monitoring/Data%20Exfiltration%20Detection/README.md) 🚧 IN PROGRESS 🚧
 
 ### SOC Simulator
   - [Introduction To Phishing (SOC Simulator 🌐)](https://github.com/iamdhruvtripathi/TryHackMe-Room-Writeups/blob/main/SOC%20Simulator/Introduction%20to%20Phishing/README.md)
