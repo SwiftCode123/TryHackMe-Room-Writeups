@@ -19,6 +19,13 @@ Learn how to detect data exfiltration attempts in various network channels.
 ```
 ## Task 1
 
-### Read the task above.
+### Continue to the next task.
 
 - Answer: `No answer needed`
+
+## Task 2
+
+### Connect with the lab.
+
+- Answer: `No answer needed`
+
