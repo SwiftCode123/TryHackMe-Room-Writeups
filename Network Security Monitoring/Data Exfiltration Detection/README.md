@@ -40,7 +40,7 @@ Learn how to detect data exfiltration attempts in various network channels.
 
 - Answer: `Network-based`
 
-### Task 4
+## Task 4
 
 ## What is the suspicious domain receiving the DNS traffic?
 
