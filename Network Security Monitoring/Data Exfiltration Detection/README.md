@@ -42,7 +42,7 @@ Learn how to detect data exfiltration attempts in various network channels.
 
 ## Task 4
 
-## What is the suspicious domain receiving the DNS traffic?
+### What is the suspicious domain receiving the DNS traffic?
 
 - Using Wireshark, we can see a large number of suspicious DNS queries being sent to this particular domain. Furthermore, we use the filter below because malware may sometimes send DNS queries to nonexistent or unreachable domains, which can be an indicator of suspicious activity
 ```
