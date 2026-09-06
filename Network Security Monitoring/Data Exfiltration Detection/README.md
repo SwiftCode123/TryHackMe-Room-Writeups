@@ -1,4 +1,4 @@
-<img width="1512" height="798" alt="image" src="https://github.com/user-attachments/assets/13ba8043-306d-4a94-982a-a39e1bc660d5" /><p align="center">
+<p align="center">
   <img src="https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg" width="150" alt="TryHackMe Logo">
 </p>
 
